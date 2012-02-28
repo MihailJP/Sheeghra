@@ -18,4 +18,4 @@ $(SRCTTF:.ttf=.sfd): $(SRCTTF) $(SRCTTF:.ttf=.vtp) $(SEDSCR)
 	rm tmp.sfd
 
 clean:
-	-rm -rf $(SRCTTF) $(SRCDOC) $(SRCTTF:.ttf=.vtp) $(SRCTTF:.ttf=.sfd)
+	-rm -rf $(SRCTTF) $(SRCDOC) $(SRCTTF:.ttf=.vtp) $(SRCTTF:.ttf=.sfd) *~
