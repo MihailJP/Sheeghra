@@ -15,7 +15,7 @@ conv2sfd: fetch $(SRCTTF:.ttf=.sfd)
 $(SRCTTF:.ttf=.vtp): $(SRCTTF)
 	../tools/extractvtp.pl $< > $@
 $(SRCTTF:.ttf=.sfd): $(BASETTF) $(SRCTTF:.ttf=.vtp) $(SEDSCR)
-	LANG=C;../tools/conv2sfd.py $(SRCTTF) $(SRCTTF:.ttf=.vtp) tmp.sfd
+	LANG=C;../tools/conv2sfd.py $(BASETTF) $(SRCTTF:.ttf=.vtp) tmp.sfd
 	cat tmp.sfd | ../tools/lookupname.pl $(SRCTTF:.ttf=.vtp) > $@
 	rm tmp.sfd
 
