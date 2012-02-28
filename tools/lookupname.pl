@@ -54,12 +54,14 @@ while (<STDIN>) {
 	}
 }
 for ($i = 0; $i <= $#substList; $i++) {
+	next unless ($substOrigList[$i]);
 	$currentTag = $lutag{$substList[$i]} ? "'".$lutag{$substList[$i]}."' " : "";
 	$file =~ s/\"$substOrigList[$i]\"/\"$currentTag$substList[$i]\"/gm;
 	$file =~ s/\"$substOrigList[$i] subtable\"/\"$substList[$i]\"/gm;
 	$file =~ s/\"$substOrigList[$i] contextual (\d+)\"/\"$substList[$i] $1\"/gm;
 }
 for ($i = 0; $i <= $#posList; $i++) {
+	next unless ($posOrigList[$i]);
 	$currentTag = $lutag{$posList[$i]} ? "'".$lutag{$posList[$i]}."' " : "";
 	$file =~ s/\"$posOrigList[$i]\"/\"$currentTag$posList[$i]\"/gm;
 	$file =~ s/\"$posOrigList[$i] subtable\"/\"$posList[$i]\"/gm;
