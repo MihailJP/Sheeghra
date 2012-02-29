@@ -1,4 +1,5 @@
-.PHONY: all fetch conv2sfd patch clean distclean
+include ../common/vars.mk
+.PHONY: all fetch conv2sfd patch preparedist clean distclean
 .SUFFIXES: .ttf .vps .sfd
 
 all: patch $(TARGET)
@@ -24,6 +25,12 @@ $(SRCTTF:.ttf=.sfd): $(BASETTF) $(SRCTTF:.ttf=.vtp) $(SEDSCR)
 patch: conv2sfd $(TARGET:.ttf=.sfd) $(PATCHFILE)
 $(TARGET:.ttf=.sfd): $(PATCHFILE) $(SRCTTF:.ttf=.sfd)
 	patch -o $@ < $<
+
+preparedist: all ../$(DISTDIR)/$(TARGET) ../$(DISTDIR)/$(SRCDOC)
+../$(DISTDIR)/$(TARGET): $(TARGET)
+	cp $^ $@
+../$(DISTDIR)/$(SRCDOC): $(SRCDOC)
+	cp $^ $@
 
 clean:
 	-rm -rf $(SRCTTF:.ttf=.vtp) $(SRCTTF:.ttf=.sfd) $(TARGET) $(TARGET:.ttf=.sfd) *~
