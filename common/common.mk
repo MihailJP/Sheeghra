@@ -26,7 +26,7 @@ $(TARGET:.ttf=.sfd): $(PATCHFILE) $(SRCTTF:.ttf=.sfd)
 	patch -o $@ < $<
 
 clean:
-	-rm -rf $(SRCTTF:.ttf=.vtp) $(SRCTTF:.ttf=.sfd) *~
+	-rm -rf $(SRCTTF:.ttf=.vtp) $(SRCTTF:.ttf=.sfd) $(TARGET) $(TARGET:.ttf=.sfd) *~
 
 distclean: clean
 	-rm -rf $(SRCTTF) $(BASETTF) $(SRCDOC)
