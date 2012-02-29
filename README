@@ -3,8 +3,8 @@ Sheeghra
 
 Sheeghra is a mended version of Indic font 'Raghu' series. Raghu series is nice
 OpenType font for languages in India, but unfortunately the fonts seem to be
-corrupted and some of them are rejected by UniScribe. The aim of this project
-is to fix the corrupted OpenType tables.
+corrupted and some of them are rejected by UniScribe. Sheeghra fonts has fixed
+OpenType tables.
 
 Raghu series is available under GPL v2 at:
 http://www.cdacmumbai.in/projects/indix/n_download.shtml

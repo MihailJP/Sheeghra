@@ -1,0 +1,16 @@
+2012-03-01 MihailJP <mihailjp@gmail.com>
+
+* SheeghraDevanagari: Corrupted OpenType feature table is fixed.
+* SheeghraBengali: Corrupted OpenType feature table is fixed.
+* SheeghraBengali: Some wrongly encoded punctuations are reencoded at correct codepoints.
+* SheeghraGurmukhi: Corrupted OpenType feature table is fixed.
+* SheeghraGurmukhi: Some wrongly encoded punctuations are reencoded at correct codepoints.
+* SheeghraGujarati: Corrupted OpenType feature table is fixed.
+* SheeghraGujarati: Some wrongly encoded punctuations are reencoded at correct codepoints.
+* SheeghraOriya: Corrupted OpenType feature table is fixed.
+* SheeghraTamil: Anchor points of U+0BB4 are corrected.
+* SheeghraTelugu: Corrupted OpenType feature table is fixed.
+* SheeghraTelugu: Some wrongly encoded punctuations are reencoded at correct codepoints.
+* SheeghraTelugu: Added reph feature in order to make accepted by UniScribe.
+* SheeghraKannada: Some wrongly encoded punctuations are reencoded at correct codepoints.
+* SheeghraMalayalam: Some wrongly encoded punctuations are reencoded at correct codepoints.
