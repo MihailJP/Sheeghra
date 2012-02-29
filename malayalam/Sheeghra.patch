@@ -1,0 +1,44 @@
+--- RRRaghuMalayalam.sfd	2012-02-29 02:45:46.312500000 +0900
++++ SheeghraMalayalam.sfd	2012-03-01 03:56:48.283203100 +0900
+@@ -1,10 +1,10 @@
+ SplineFontDB: 3.0
+-FontName: RaghuMalayalamSans
+-FullName: RaghuMalayalam
+-FamilyName: RaghuMalayalam
++FontName: SheeghraMalayalam
++FullName: SheeghraMalayalam
++FamilyName: SheeghraMalayalam
+ Weight: Book
+ Copyright: RaghuMalayalam(c) Centre for Development of Advanced Computing, Mumbai. Font Design: Prof.R.K.Joshi and Rajith Kumar K.M., assisted by Nirmal Biswas, Jui Mhatre and Supriya Kharkar. Script: Malayalam. Full Font. Contains font + Unicode set requirements.
+-Version: Original Version 1.00 (2005)
++Version: Mend Version 1.00a
+ ItalicAngle: 0
+ UnderlinePosition: -174
+ UnderlineWidth: 116
+@@ -14,7 +14,7 @@
+ LayerCount: 2
+ Layer: 0 1 "Back"  1
+ Layer: 1 1 "Fore"  0
+-XUID: [1021 527 1087107962 2635642]
++XUID: [1021 527 1087107962 12337341]
+ FSType: 2
+ OS2Version: 1
+ OS2_WeightWidthSlopeOnly: 0
+@@ -50126,7 +50126,7 @@
+ EndChar
+ 
+ StartChar: glyph254
+-Encoding: 254 -1 254
++Encoding: 254 247 254
+ Width: 1122
+ GlyphClass: 2
+ Flags: W
+@@ -50251,7 +50251,7 @@
+ EndChar
+ 
+ StartChar: glyph255
+-Encoding: 255 -1 255
++Encoding: 255 215 255
+ Width: 903
+ GlyphClass: 2
+ Flags: W
