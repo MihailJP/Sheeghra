@@ -15,15 +15,6 @@
  ItalicAngle: 0
  UnderlinePosition: -400
  UnderlineWidth: 80
-@@ -14,7 +14,7 @@
- LayerCount: 2
- Layer: 0 1 "Back"  1
- Layer: 1 1 "Fore"  0
--XUID: [1021 74 1491108558 5605870]
-+XUID: [1021 74 1491108558 12239885]
- FSType: 2
- OS2Version: 1
- OS2_WeightWidthSlopeOnly: 0
 @@ -80,10 +80,11 @@
  Lookup: 6 0 0 "'psts' Iipostsub1"  {"Iipostsub1"  } ['psts' ('beng' <'dflt' > ) ]
  Lookup: 6 0 0 "'psts' Iipostsub2"  {"Iipostsub2"  } ['psts' ('beng' <'dflt' > ) ]

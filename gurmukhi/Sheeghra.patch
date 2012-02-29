@@ -15,15 +15,6 @@
  ItalicAngle: 0
  UnderlinePosition: -612
  UnderlineWidth: 120
-@@ -14,7 +14,7 @@
- LayerCount: 2
- Layer: 0 1 "Back"  1
- Layer: 1 1 "Fore"  0
--XUID: [1021 373 1686186441 14110289]
-+XUID: [1021 373 1686186441 13313285]
- FSType: 2
- OS2Version: 1
- OS2_WeightWidthSlopeOnly: 0
 @@ -53,9 +53,6 @@
  OS2Vendor: 'NCST'
  OS2CodePages: 00000001.00000000

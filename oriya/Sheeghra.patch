@@ -15,15 +15,6 @@
  ItalicAngle: 0
  UnderlinePosition: -712
  UnderlineWidth: 96
-@@ -14,7 +14,7 @@
- LayerCount: 2
- Layer: 0 1 "Back"  1
- Layer: 1 1 "Fore"  0
--XUID: [1021 180 92692954 7934890]
-+XUID: [1021 180 92692954 8101413]
- FSType: 2
- OS2Version: 1
- OS2_WeightWidthSlopeOnly: 0
 @@ -82,9 +82,8 @@
  Lookup: 6 0 0 "ConsOneTopMarks"  {"ConsOneTopMarks"  } []
  Lookup: 6 0 0 "VowelChandrabindu"  {"VowelChandrabindu 0"  "VowelChandrabindu 1"  "VowelChandrabindu 2"  "VowelChandrabindu 3"  "VowelChandrabindu 4"  "VowelChandrabindu 5"  } []

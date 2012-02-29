@@ -15,15 +15,6 @@
  ItalicAngle: 0
  UnderlinePosition: -174
  UnderlineWidth: 116
-@@ -14,7 +14,7 @@
- LayerCount: 2
- Layer: 0 1 "Back"  1
- Layer: 1 1 "Fore"  0
--XUID: [1021 527 1087107962 2635642]
-+XUID: [1021 527 1087107962 12337341]
- FSType: 2
- OS2Version: 1
- OS2_WeightWidthSlopeOnly: 0
 @@ -50126,7 +50126,7 @@
  EndChar
  

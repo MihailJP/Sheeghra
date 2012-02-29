@@ -15,15 +15,6 @@
  ItalicAngle: 0
  UnderlinePosition: -156
  UnderlineWidth: 104
-@@ -14,7 +14,7 @@
- LayerCount: 2
- Layer: 0 1 "Back"  1
- Layer: 1 1 "Fore"  0
--XUID: [1021 600 933142589 16687238]
-+XUID: [1021 600 933142589 14399711]
- FSType: 0
- OS2Version: 1
- OS2_WeightWidthSlopeOnly: 0
 @@ -86,8 +86,8 @@
  Lookup: 6 0 0 "'psts' IiMatraThree"  {"IiMatraThree"  } ['psts' ('deva' <'dflt' > ) ]
  Lookup: 6 0 0 "'psts' IiMatraSix"  {"IiMatraSix"  } ['psts' ('deva' <'dflt' > ) ]

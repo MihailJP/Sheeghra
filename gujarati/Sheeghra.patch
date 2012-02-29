@@ -15,15 +15,6 @@
  ItalicAngle: 0
  UnderlinePosition: -628
  UnderlineWidth: 104
-@@ -14,7 +14,7 @@
- LayerCount: 2
- Layer: 0 1 "Back"  1
- Layer: 1 1 "Fore"  0
--XUID: [1021 96 1373234233 11683672]
-+XUID: [1021 96 1373234233 1867075]
- FSType: 2
- OS2Version: 1
- OS2_WeightWidthSlopeOnly: 0
 @@ -58,7 +58,7 @@
  Lookup: 4 0 0 "'nukt' nuktasub"  {"nuktasub"  } ['nukt' ('gujr' <'dflt' > ) ]
  Lookup: 6 0 0 "'blwf' vatusub"  {"vatusub 0"  "vatusub 1"  "vatusub 2"  "vatusub 3"  } ['blwf' ('gujr' <'dflt' > ) ]
