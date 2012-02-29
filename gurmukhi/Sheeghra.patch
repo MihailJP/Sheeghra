@@ -1,5 +1,5 @@
 --- RORaghuPunjabi.sfd	2012-02-29 02:45:31.243164000 +0900
-+++ SheeghraGurmukhi.sfd	2012-03-01 00:36:21.813476600 +0900
++++ SheeghraGurmukhi.sfd	2012-03-01 04:25:22.208984400 +0900
 @@ -1,10 +1,10 @@
  SplineFontDB: 3.0
 -FontName: RaghuPunjabiSans
@@ -77,6 +77,60 @@
  ChainPos2: coverage "TippiAddakpos"  0 0 0 1
   1 1 0
    Coverage: 9 GuruAddak
+@@ -5128,7 +5096,7 @@
+ EndChar
+ 
+ StartChar: HalZWNJ
+-Encoding: 44 201 44
++Encoding: 44 8230 44
+ Width: 1120
+ GlyphClass: 2
+ Flags: W
+@@ -5238,7 +5206,7 @@
+ EndChar
+ 
+ StartChar: ZWJHal
+-Encoding: 45 208 45
++Encoding: 45 8211 45
+ Width: 1112
+ GlyphClass: 2
+ Flags: W
+@@ -5313,7 +5281,7 @@
+ EndChar
+ 
+ StartChar: glyph46
+-Encoding: 46 209 46
++Encoding: 46 8212 46
+ Width: 1816
+ GlyphClass: 2
+ Flags: W
+@@ -5388,7 +5356,7 @@
+ EndChar
+ 
+ StartChar: glyph47
+-Encoding: 47 214 47
++Encoding: 47 247 47
+ Width: 1026
+ GlyphClass: 2
+ Flags: W
+@@ -5511,7 +5479,7 @@
+ EndChar
+ 
+ StartChar: glyph48
+-Encoding: 48 215 48
++Encoding: 48 8722 48
+ Width: 1020
+ GlyphClass: 2
+ Flags: W
+@@ -5586,7 +5554,7 @@
+ EndChar
+ 
+ StartChar: glyph49
+-Encoding: 49 216 49
++Encoding: 49 215 49
+ Width: 904
+ GlyphClass: 2
+ Flags: W
 @@ -14170,7 +14138,6 @@
   93 -289 93 -289 258 -510 c 1,0,1
  EndSplineSet

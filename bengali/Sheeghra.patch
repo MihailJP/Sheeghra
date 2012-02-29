@@ -1,5 +1,5 @@
 --- RVRaghuBengali.sfd	2012-02-29 02:45:30.118164000 +0900
-+++ SheeghraBengali.sfd	2012-02-29 23:07:32.008789100 +0900
++++ SheeghraBengali.sfd	2012-03-01 04:29:34.485351600 +0900
 @@ -1,10 +1,10 @@
  SplineFontDB: 3.0
 -FontName: RaghuBengaliSans
@@ -49,6 +49,78 @@
  EndShort
  LangName: 1033 "RaghuBengali+AKkA Centre for Development of Advanced Computing, Mumbai. Font Design: Prof.R.K.Joshi and Vinay Saynekar, assisted by Amresh Mondkar, Jui Mhatre and Supriya Kharkar. Script: Bengali. Full Font. Contains font +- Unicode set requirements." "" "" "C-DAC Mumbai (formerly NCST): RaghuBengali: Original Version 1.00 (FontersNCST)" "" "Original Version 1.00 (2005)" "" "RaghuBengali - Trademark of Centre for Development of Advanced Computing (C-DAC) Mumbai (formerly NCST)." "Centre for Development of Advanced Computing (C-DAC) Mumbai, (formerly NCST)." "Prof. R.K.Joshi and Vinay Saynekar" "RaghuBengali is the name of a digital font - a typeface in Bengali Script to be used for composing text in Bengali language. It has been designed in Open Type Format with Unicode standards and reordering as well as combining characters according to the visual syllable standard of IndiX Compugraphy. +AA0ACgANAAoA-This first Version called RaghuBengali font Original Version 1.00 (2005) is a non-hinted text face, to be used for continuous text in Bengali language. And is recommended to be used in minimum 18pt. size on screen and 12pt. size on paper (see the README file). The designed letterforms of RaghuBengali font in Bengali script, are based on traditional writing with reed pen, creating combinations of thick and thin strokes. +AA0ACgANAAoA-RaghuBengali font Original Version 1.00 (2005) has been designed and developed, by Prof. R. K. Joshi (TypeFont Design Director, Visiting Design Specialist at C-DAC Mumbai) in association with Mr. Vinay Saynekar (TypeFont Designer), assisted by Mr. Amresh Mondkar, Ms. Jui Mhatre and Ms. Supriya Kharkar at C-DAC Mumbai (formerly NCST)." "http://www.cdacmumbai.in/projects/indix" "http://staff.cdamumbai.in/rkjoshi" "1. RaghuBengali font Original Version 1.00 (2005) +AKkA Centre for Development of Advanced Computing, Mumbai.+AA0ACgANAAoA-2. RaghuBengali font Original Version 1.00 (2005) has been designed and developed, by Prof. R. K. Joshi (TypeFont Design Director, Visiting Design Specialist at C-DAC Mumbai) in association with Mr. Vinay Saynekar (TypeFont Designer), assisted by Mr. Amresh Mondkar, Ms. Jui Mhatre and Ms. Supriya Kharkar at C-DAC Mumbai (formerly NCST) under IndiX2, Project funded by TDIL Programme, Department of Information Technology, Ministry of Communications and Information Technology, Govt. of India.+AA0ACgANAAoA-3. RaghuBengali font Original Version 1.00 (2005) has been released under GNU GPL Version 2 (see the COPYING file)." "http://www.cdacmumbai.in/projects/indix" 
  Encoding: Original
+@@ -5395,7 +5396,7 @@
+ EndChar
+ 
+ StartChar: HalZWNJ
+-Encoding: 44 201 44
++Encoding: 44 8230 44
+ Width: 1496
+ GlyphClass: 2
+ Flags: W
+@@ -5506,7 +5507,7 @@
+ EndChar
+ 
+ StartChar: ZWJHal
+-Encoding: 45 208 45
++Encoding: 45 8211 45
+ Width: 1112
+ GlyphClass: 2
+ Flags: W
+@@ -5578,7 +5579,7 @@
+ EndChar
+ 
+ StartChar: glyph46
+-Encoding: 46 209 46
++Encoding: 46 8212 46
+ Width: 1816
+ GlyphClass: 2
+ Flags: W
+@@ -5649,7 +5650,7 @@
+ EndChar
+ 
+ StartChar: glyph47
+-Encoding: 47 212 47
++Encoding: 47 8216 47
+ Width: 674
+ GlyphClass: 2
+ Flags: W
+@@ -5736,7 +5737,7 @@
+ EndChar
+ 
+ StartChar: glyph48
+-Encoding: 48 213 48
++Encoding: 48 8217 48
+ Width: 674
+ GlyphClass: 2
+ Flags: W
+@@ -5823,7 +5824,7 @@
+ EndChar
+ 
+ StartChar: glyph49
+-Encoding: 49 214 49
++Encoding: 49 247 49
+ Width: 1282
+ GlyphClass: 2
+ Flags: W
+@@ -5936,7 +5937,7 @@
+ EndChar
+ 
+ StartChar: glyph50
+-Encoding: 50 215 50
++Encoding: 50 8722 50
+ Width: 1282
+ GlyphClass: 2
+ Flags: W
+@@ -6007,7 +6008,7 @@
+ EndChar
+ 
+ StartChar: glyph51
+-Encoding: 51 216 51
++Encoding: 51 215 51
+ Width: 1282
+ GlyphClass: 2
+ Flags: W
 @@ -37449,7 +37450,7 @@
   536 1352 l 1,22,-1
   624 1264 l 1,0,-1
