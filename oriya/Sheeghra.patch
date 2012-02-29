@@ -1,0 +1,467 @@
+--- RRRaghuOriya.sfd	2012-02-29 02:45:36.906250000 +0900
++++ SheeghraOriya.sfd	2012-03-01 00:05:42.532226600 +0900
+@@ -1,10 +1,10 @@
+ SplineFontDB: 3.0
+-FontName: RaghuOriyaSans
+-FullName: RaghuOriya
+-FamilyName: RaghuOriya
++FontName: SheeghraOriya
++FullName: SheeghraOriya
++FamilyName: SheeghraOriya
+ Weight: Book
+ Copyright: RaghuOriya(c) Centre for Development of Advanced Computing, Mumbai. Font Design: Prof.R.K.Joshi and Rajith Kumar K.M, assisted by Nirmal Biswas, Jui Mhatre and Supriya Kharkar. Script: Oriya. Full Font. Contains font + Unicode set requirements.
+-Version: Original Version 1.00 (2005)
++Version: Mend Version 1.00a
+ ItalicAngle: 0
+ UnderlinePosition: -712
+ UnderlineWidth: 96
+@@ -14,7 +14,7 @@
+ LayerCount: 2
+ Layer: 0 1 "Back"  1
+ Layer: 1 1 "Fore"  0
+-XUID: [1021 180 92692954 7934890]
++XUID: [1021 494 2031268696 8101413]
+ FSType: 2
+ OS2Version: 1
+ OS2_WeightWidthSlopeOnly: 0
+@@ -82,9 +82,8 @@
+ Lookup: 6 0 0 "ConsOneTopMarks"  {"ConsOneTopMarks"  } []
+ Lookup: 6 0 0 "VowelChandrabindu"  {"VowelChandrabindu 0"  "VowelChandrabindu 1"  "VowelChandrabindu 2"  "VowelChandrabindu 3"  "VowelChandrabindu 4"  "VowelChandrabindu 5"  } []
+ Lookup: 6 0 0 "'haln' Halant"  {"Halant"  } ['haln' ('orya' <'dflt' > ) ]
+-Lookup: 4 0 0 "Ligature Substitution lookup 29"  {"Ligature Substitution lookup 29 subtable"  } []
++Lookup: 4 0 0 "Ligature Substitution lookup 29"  {"Ligature Substitution lookup 29 subtable"  } ['rphf' ('orya' <'dflt' > ) ]
+ Lookup: 1 0 0 "Single Substitution lookup 30"  {"Single Substitution lookup 30 subtable"  } []
+-Lookup: 1 0 0 "Single Substitution lookup 31"  {"Single Substitution lookup 31 subtable"  } []
+ Lookup: 1 0 0 "Single Substitution lookup 32"  {"Single Substitution lookup 32 subtable"  } []
+ Lookup: 1 0 0 "Single Substitution lookup 33"  {"Single Substitution lookup 33 subtable"  } []
+ Lookup: 1 0 0 "Single Substitution lookup 34"  {"Single Substitution lookup 34 subtable"  } []
+@@ -353,55 +352,6 @@
+  1
+   SeqLookup: 0 "Single Substitution lookup 32" 
+ EndFPST
+-ChainSub2: coverage "HalantZWJ 6"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 oryaHalant
+-  BCoverage: 5 space
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 31" 
+-EndFPST
+-ChainSub2: coverage "HalantZWJ 5"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 oryaHalant
+-  BCoverage: 12 DottedCircle
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 31" 
+-EndFPST
+-ChainSub2: coverage "HalantZWJ 4"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 oryaHalant
+-  BCoverage: 3 ZWJ
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 31" 
+-EndFPST
+-ChainSub2: coverage "HalantZWJ 3"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 oryaHalant
+-  BCoverage: 120 oryaNukta oryaMatraU oryaMatraUu oryaMatraVocalicR oryaMatraUTwo oryaMatraVocalicRr oryaMatraVocalicL oryaMatraVocalicLl
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 31" 
+-EndFPST
+-ChainSub2: coverage "HalantZWJ 2"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 oryaHalant
+-  BCoverage: 8 oryaReph
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 31" 
+-EndFPST
+-ChainSub2: coverage "HalantZWJ 1"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 oryaHalant
+-  BCoverage: 201 oryaCandrabindu oryaMatraI oryaLengthmarkAi oryaMatraICandrabindu oryaLengthmarkAiCandrabindu oryaRephThree oryaMatraIReph oryaLengthmarkAiReph oryaMatraIRephCandrabindu oryaLengthmarkAiRephCandrabindu
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 31" 
+-EndFPST
+-ChainSub2: coverage "HalantZWJ 0"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 oryaHalant
+-  BCoverage: 1081 oryaFullKa oryaFullKha oryaFullGa oryaFullGha oryaFullNga oryaFullCa oryaFullCha oryaFullJa oryaFullJha oryaFullNya oryaFullTta oryaFullTtha oryaFullDda oryaFullDdha oryaFullNna oryaFullTa oryaFullTha oryaFullDa oryaFullDha oryaFullNa oryaFullPa oryaFullPha oryaFullBa oryaFullBha oryaFullMa oryaFullYa oryaFullRa oryaFullLa oryaFullLla oryaFullVa oryaFullSha oryaFullSsa oryaFullSa oryaFullHa oryaFullWa oryaFullKSsa oryaFullJNya oryaFullNgKa oryaFullNgKha oryaFullNgGa oryaFullNgGha oryaFullCCa oryaFullTtTta oryaFullTTa oryaFullDDha oryaFullDDa oryaFullTKVocalicR oryaFullNnNna oryaFullSsNna oryaFullNyCa oryaFullNyJha oryaFullNyJa oryaFullDBha oryaFullDhDha oryaFullBDa oryaFullNDa oryaFullNDha oryaFullMPha oryaFullMPa oryaFullSTRa oryaFullNTRaTwo oryaFullNTRa oryaFullHNa oryaFullHVa oryaFullHMa oryaFullCCha oryaFullNyCha oryaFullMBha oryaFullNTa oryaFullSTa oryaFullPTa oryaFullKTa oryaFullNnDda oryaFullTKa oryaFullTSa oryaFullTPa oryaFullThI oryaFullDhI oryaFullKhI oryaFullTSNa oryaFullNnDdha oryaFullShCha oryaFullTNa oryaFullTMa oryaFullGDha oryaFullTGDha oryaFullTPha
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 31" 
+-EndFPST
+ ChainSub2: coverage "RephThree 1"  0 0 0 1
+  1 2 0
+   Coverage: 8 oryaReph
+@@ -652,8 +602,8 @@
+   0
+   177
+   316
+-  1
+-  1
++  0
++  0
+ EndShort
+ LangName: 1033 "RaghuOriya+AKkA Centre for Development of Advanced Computing, Mumbai. Font Design: Prof.R.K.Joshi and Rajith Kumar K.M, assisted by Nirmal Biswas, Jui Mhatre and Supriya Kharkar. Script: Oriya. Full Font. Contains font +- Unicode set requirements." "" "" "C-DAC Mumbai (formerly NCST): RaghuOriya: Original Version 1.00 (FontersNCST)" "" "Original Version 1.00 (2005)" "" "RaghuOriya - Trademark of Centre for Development of Advanced Computing (C-DAC) Mumbai (formerly NCST)." "Centre for Development of Advanced Computing (C-DAC) Mumbai, (formerly NCST)." "Prof. R.K.Joshi and Rajith Kumar K.M." "RaghuOriya is the name of a digital font - a typeface in Oriya Script to be used for composing text in Oriya language. It has been designed in Open Type Format with Unicode standards and reordering as well as combining characters according to the visual syllable standard of IndiX Compugraphy. +AA0ACgANAAoA-This first Version called RaghuOriya font Original Version 1.00 (2005) is a non-hinted text face, to be used for continuous text in Oriya language. And is recommended to be used in minimum 18pt. size on screen and 12pt. size on paper (see the README file). The designed letterforms of RaghuOriya font in Oriya script, have elegant structures of thick and semi-thick strokes with graceful curves. Vertical strokes contain slight curvature.+AA0ACgANAAoA-RaghuOriya font Original Version 1.00 (2005) has been designed and developed, by Prof. R. K. Joshi (TypeFont Design Director, Visiting Design Specialist at C-DAC Mumbai) in association with Mr. Rajith Kumar K. M. (TypeFont Designer), assisted by Mr. Nirmal Biswas, Ms. Jui Mhatre and Ms. Supriya Kharkar at C-DAC Mumbai (formerly NCST)." "http://www.cdacmumbai.in/projects/indix" "http://staff.cdamumbai.in/rkjoshi" "1. RaghuOriya font Original Version 1.00 (2005) +AKkA Centre for Development of Advanced Computing, Mumbai.+AA0ACgANAAoA-2. RaghuOriya font Original Version 1.00 (2005) has been designed and developed, by Prof. R. K. Joshi (TypeFont Design Director, Visiting Design Specialist at C-DAC Mumbai) in association with Mr. Rajith Kumar K. M. (TypeFont Designer), assisted by Mr. Nirmal Biswas, Ms. Jui Mhatre and Ms. Supriya Kharkar at C-DAC Mumbai (formerly NCST) under IndiX2, Project funded by TDIL Programme, Department of Information Technology, Ministry of Communications and Information Technology, Govt. of India.+AA0ACgANAAoA-3. RaghuOriya font Original Version 1.00 (2005) has been released under GNU GPL Version 2 (see the COPYING file)." "http://www.cdacmumbai.in/projects/indix" 
+ Encoding: Original
+@@ -16507,7 +16457,6 @@
+ Substitution2: "Single Substitution lookup 38 subtable" oryaHalantTwo
+ Substitution2: "Single Substitution lookup 35 subtable" oryaHalantTwo
+ Substitution2: "Single Substitution lookup 33 subtable" oryaHalantThree
+-Substitution2: "Single Substitution lookup 31 subtable" ZWJHal
+ EndChar
+ 
+ StartChar: oryaLengthmarkAi
+@@ -38323,7 +38272,7 @@
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 35 subtable" oryaRaVattuTwo
+ Substitution2: "Single Substitution lookup 33 subtable" oryaRaVattuTwo
+-Ligature2: "Vattu" ZWJHal oryaFullRa
++Ligature2: "Vattu" oryaHalant oryaFullRa
+ EndChar
+ 
+ StartChar: oryaRaVattuTwo
+@@ -38546,7 +38495,7 @@
+  1000 411 l 2,34,35
+  1000 216 1000 216 1008 0 c 1,0,-1
+ EndSplineSet
+-Ligature2: "Vattu" ZWJHal oryaFullYya
++Ligature2: "Vattu" oryaHalant oryaFullYya
+ EndChar
+ 
+ StartChar: oryaVaVattuOne
+@@ -38665,9 +38614,7 @@
+  -71 -613 l 2,29,30
+  -71 -678 -71 -678 -67 -806 c 1,0,-1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullWa
+-Ligature2: "LastConsSub" ZWJHal oryaFullVa
+-Ligature2: "LastConsSub" ZWJHal oryaFullVa
++Ligature2: "LastConsSub" oryaHalant oryaFullVa
+ EndChar
+ 
+ StartChar: oryaVaVattuTwo
+@@ -61238,7 +61185,7 @@
+  -122 -22 -122 -22 -75 18 c 128,-1,53
+  -28 58 -28 58 -27 117 c 0,42,43
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullKa
++Ligature2: "LastConsSub" oryaHalant oryaFullKa
+ EndChar
+ 
+ StartChar: oryaKhaVattu
+@@ -61421,7 +61368,7 @@
+  -21 -410 -21 -410 22 -379 c 0,65,66
+  71 -344 71 -344 71 -280 c 0,57,58
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullKha
++Ligature2: "LastConsSub" oryaHalant oryaFullKha
+ EndChar
+ 
+ StartChar: oryaGaVattu
+@@ -61595,7 +61542,7 @@
+  -12 -410 -12 -410 31 -379 c 0,58,59
+  79 -345 79 -345 80 -281 c 0,48,49
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullGa
++Ligature2: "LastConsSub" oryaHalant oryaFullGa
+ EndChar
+ 
+ StartChar: oryaGhaVattu
+@@ -61792,7 +61739,7 @@
+  238 -147 238 -147 239 -104 c 0,79,80
+  240 -66 240 -66 240 -53 c 1,40,41
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullGha
++Ligature2: "LastConsSub" oryaHalant oryaFullGha
+ EndChar
+ 
+ StartChar: oryaNgaVattu
+@@ -61974,7 +61921,7 @@
+  193 -56 193 -56 286 -56 c 0,71,72
+  373 -56 373 -56 371 21 c 0,65,66
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullNga
++Ligature2: "LastConsSub" oryaHalant oryaFullNga
+ EndChar
+ 
+ StartChar: oryaCaVattu
+@@ -62102,7 +62049,7 @@
+  -185 -430 -185 -430 -90 -430 c 0,45,46
+  84 -430 84 -430 84 -299 c 0,37,38
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullCa
++Ligature2: "LastConsSub" oryaHalant oryaFullCa
+ EndChar
+ 
+ StartChar: oryaChaVattu
+@@ -62242,7 +62189,7 @@
+  -1038 -410 -1038 -410 -889 -408 c 0,54,55
+  -765 -406 -765 -406 -656 -313 c 1,44,45
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullCha
++Ligature2: "LastConsSub" oryaHalant oryaFullCha
+ EndChar
+ 
+ StartChar: oryaJaVattu
+@@ -62398,7 +62345,7 @@
+  314 301 l 1,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 37 subtable" oryaJaVattuTwo
+-Ligature2: "LastConsSub" ZWJHal oryaFullJa
++Ligature2: "LastConsSub" oryaHalant oryaFullJa
+ EndChar
+ 
+ StartChar: oryaJhaVattu
+@@ -62565,7 +62512,7 @@
+  -213 -397 -213 -397 -47 -397 c 256,61,62
+  119 -397 119 -397 119 -268 c 0,55,56
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullJha
++Ligature2: "LastConsSub" oryaHalant oryaFullJha
+ EndChar
+ 
+ StartChar: oryaNyaVattu
+@@ -62797,7 +62744,7 @@
+  178 -454 178 -454 267 -412 c 0,94,95
+  382 -358 382 -358 387 -251 c 0,60,61
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullNya
++Ligature2: "LastConsSub" oryaHalant oryaFullNya
+ EndChar
+ 
+ StartChar: oryaTtaVattu
+@@ -62962,7 +62909,7 @@
+  -144 -407 -144 -407 -78 -407 c 0,54,55
+  79 -407 79 -407 80 -277 c 0,46,47
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullTta
++Ligature2: "LastConsSub" oryaHalant oryaFullTta
+ EndChar
+ 
+ StartChar: oryaTthaVattu
+@@ -63063,7 +63010,7 @@
+  60 -430 60 -430 160 -346 c 0,27,28
+  272 -252 272 -252 272 -89 c 0,13,14
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullTtha
++Ligature2: "LastConsSub" oryaHalant oryaFullTtha
+ EndChar
+ 
+ StartChar: oryaDdaVattu
+@@ -63233,7 +63180,7 @@
+  109 340 109 340 222 245 c 1,56,57
+  344 144 344 144 344 -24 c 0,0,1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullDda
++Ligature2: "LastConsSub" oryaHalant oryaFullDda
+ EndChar
+ 
+ StartChar: oryaDdhaVattu
+@@ -63394,7 +63341,7 @@
+  -58 -421 -58 -421 -15 -421 c 0,59,60
+  86 -420 86 -420 90 -327 c 0,51,52
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullDdha
++Ligature2: "LastConsSub" oryaHalant oryaFullDdha
+ EndChar
+ 
+ StartChar: oryaNnaVattu
+@@ -63595,7 +63542,7 @@
+  -255 -399 -255 -399 -91 -398 c 256,80,81
+  73 -397 73 -397 73 -290 c 0,72,73
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullNna
++Ligature2: "LastConsSub" oryaHalant oryaFullNna
+ EndChar
+ 
+ StartChar: oryaTaVattu
+@@ -63744,7 +63691,7 @@
+  107 340 107 340 221 245 c 0,60,61
+  343 144 343 144 343 -24 c 0,0,1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullTa
++Ligature2: "LastConsSub" oryaHalant oryaFullTa
+ EndChar
+ 
+ StartChar: oryaThaVattu
+@@ -63904,7 +63851,7 @@
+  307 -361 307 -361 312 -492 c 1,0,-1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 40 subtable" oryaChaVattu
+-Ligature2: "LastConsSub" ZWJHal oryaFullTha
++Ligature2: "LastConsSub" oryaHalant oryaFullTha
+ EndChar
+ 
+ StartChar: oryaDaVattu
+@@ -64086,7 +64033,7 @@
+  136 360 136 360 249 265 c 1,60,61
+  371 164 371 164 371 -4 c 0,0,1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullDa
++Ligature2: "LastConsSub" oryaHalant oryaFullDa
+ EndChar
+ 
+ StartChar: oryaDhaVattu
+@@ -64249,7 +64196,7 @@
+  307 -261 l 2,45,46
+  307 -364 307 -364 312 -492 c 1,0,-1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullDha
++Ligature2: "LastConsSub" oryaHalant oryaFullDha
+ EndChar
+ 
+ StartChar: oryaNaVattu
+@@ -64372,7 +64319,7 @@
+  305 -148 305 -148 312 -492 c 1,0,-1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 37 subtable" oryaNaVattuTwo
+-Ligature2: "LastConsSub" ZWJHal oryaFullNa
++Ligature2: "LastConsSub" oryaHalant oryaFullNa
+ EndChar
+ 
+ StartChar: oryaPaVattu
+@@ -64548,7 +64495,7 @@
+  235 -311 235 -311 238 -218 c 0,62,63
+  242 -87 242 -87 242 -51 c 0,35,36
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullPa
++Ligature2: "LastConsSub" oryaHalant oryaFullPa
+ EndChar
+ 
+ StartChar: oryaPhaVattu
+@@ -64765,7 +64712,7 @@
+  237 -248 237 -248 238 -218 c 0,84,85
+  242 -88 242 -88 242 -51 c 0,56,57
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullPha
++Ligature2: "LastConsSub" oryaHalant oryaFullPha
+ EndChar
+ 
+ StartChar: oryaBaVattu
+@@ -64918,7 +64865,7 @@
+  -224 -306 -224 -306 -90 -306 c 0,50,51
+  41 -306 41 -306 43 -206 c 0,44,45
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullBa
++Ligature2: "LastConsSub" oryaHalant oryaFullBa
+ EndChar
+ 
+ StartChar: oryaBhaVattu
+@@ -65084,7 +65031,7 @@
+  383 -249 383 -249 286 -366 c 1,68,69
+  368 -473 368 -473 431 -528 c 1,0,-1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullBha
++Ligature2: "LastConsSub" oryaHalant oryaFullBha
+ EndChar
+ 
+ StartChar: oryaMaVattu
+@@ -65234,7 +65181,7 @@
+  307 -393 307 -393 312 -492 c 1,0,-1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 39 subtable" oryaMaVattuSpecial
+-Ligature2: "LastConsSub" ZWJHal oryaFullMa
++Ligature2: "LastConsSub" oryaHalant oryaFullMa
+ EndChar
+ 
+ StartChar: oryaYaVattu
+@@ -65420,7 +65367,7 @@
+  236 -264 236 -264 238 -223 c 0,66,67
+  242 -135 242 -135 242 -56 c 0,40,41
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullYa
++Ligature2: "LastConsSub" oryaHalant oryaFullYa
+ EndChar
+ 
+ StartChar: oryaLaVattu
+@@ -65580,8 +65527,7 @@
+  434 -500 l 1,0,-1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 37 subtable" oryaLaVattuTwo
+-Ligature2: "LastConsSub" ZWJHal oryaFullLa
+-Ligature2: "LastConsSub" ZWJHal oryaFullLa
++Ligature2: "LastConsSub" oryaHalant oryaFullLa
+ EndChar
+ 
+ StartChar: oryaLlaVattu
+@@ -65744,8 +65690,7 @@
+  308 -452 308 -452 312 -492 c 1,0,-1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 37 subtable" oryaLlaVattuTwo
+-Ligature2: "LastConsSub" ZWJHal oryaFullLla
+-Ligature2: "LastConsSub" ZWJHal oryaFullLla
++Ligature2: "LastConsSub" oryaHalant oryaFullLla
+ EndChar
+ 
+ StartChar: oryaVaVattu
+@@ -65913,7 +65858,7 @@
+  -135 -163 -135 -163 -90 -163 c 256,58,59
+  -45 -163 -45 -163 -45 -208 c 256,52,53
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullVa
++Ligature2: "LastConsSub" oryaHalant oryaFullVa
+ EndChar
+ 
+ StartChar: oryaShaVattu
+@@ -66102,7 +66047,7 @@
+  -290 -430 -290 -430 -116 -430 c 256,64,65
+  58 -430 58 -430 58 -301 c 0,58,59
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullSha
++Ligature2: "LastConsSub" oryaHalant oryaFullSha
+ EndChar
+ 
+ StartChar: oryaSsaVattu
+@@ -66308,7 +66253,7 @@
+  193 -345 193 -345 224 -278 c 0,65,66
+  237 -250 237 -250 238 -218 c 1,46,-1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullSsa
++Ligature2: "LastConsSub" oryaHalant oryaFullSsa
+ EndChar
+ 
+ StartChar: oryaSaVattu
+@@ -66464,7 +66409,7 @@
+  -119 -266 -119 -266 -207 -339 c 1,46,-1
+  232 -421 l 1,27,-1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullSa
++Ligature2: "LastConsSub" oryaHalant oryaFullSa
+ EndChar
+ 
+ StartChar: oryaHaVattu
+@@ -66664,7 +66609,7 @@
+  111 340 111 340 225 245 c 0,76,77
+  346 144 346 144 346 -24 c 0,0,1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullHa
++Ligature2: "LastConsSub" oryaHalant oryaFullHa
+ EndChar
+ 
+ StartChar: oryaRraVattu
+@@ -67222,7 +67167,7 @@
+  154 -427 154 -427 224 -288 c 0,70,71
+  240 -256 240 -256 240 -219 c 1,53,-1
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullKSsa
++Ligature2: "LastConsSub" oryaHalant oryaFullKSsa
+ EndChar
+ 
+ StartChar: oryaJNyaVattu
+@@ -67495,7 +67440,7 @@
+  -392 -351 -392 -351 -292 -350 c 0,117,118
+  -189 -348 -189 -348 -189 -218 c 0,109,110
+ EndSplineSet
+-Ligature2: "LastConsSub" ZWJHal oryaFullJNya
++Ligature2: "LastConsSub" oryaHalant oryaFullJNya
+ EndChar
+ 
+ StartChar: oryaConMarkNna
+@@ -67766,7 +67711,7 @@
+  16 -294 16 -294 13 -218 c 0,37,38
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 37 subtable" oryaMaVattuTwo
+-Ligature2: "LastConsSub" ZWJHal oryaFullMa
++Ligature2: "LastConsSub" oryaHalant oryaFullMa
+ EndChar
+ 
+ StartChar: oryaDhIVattu
