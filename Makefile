@@ -5,10 +5,10 @@ FETCHDOCS=COPYING.txt
 all: patch
 	for i in $(DIRS);do cd $$i; make $@; cd ..; done
 
-fetch: COPYING.txt
+fetch: $(FETCHDOCS)
 	for i in $(DIRS);do cd $$i; make $@; cd ..; done
 
-COPYING.txt:
+$(FETCHDOCS):
 	wget http://www.cdacmumbai.in/projects/indix/RaghuFonts/$(FETCHDOCS)
 
 conv2sfd: fetch
