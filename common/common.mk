@@ -1,7 +1,7 @@
-.PHONY: all fetch conv2sfd clean distclean
+.PHONY: all fetch conv2sfd patch clean distclean
 .SUFFIXES: .ttf .vps .sfd
 
-all: conv2sfd
+all: patch
 
 fetch: $(SRCTTF) $(BASETTF) $(SRCDOC)
 $(SRCTTF):
@@ -18,6 +18,10 @@ $(SRCTTF:.ttf=.sfd): $(BASETTF) $(SRCTTF:.ttf=.vtp) $(SEDSCR)
 	LANG=C;../tools/conv2sfd.py $(BASETTF) $(SRCTTF:.ttf=.vtp) tmp.sfd
 	cat tmp.sfd | ../tools/lookupname.pl $(SRCTTF:.ttf=.vtp) > $@
 	rm tmp.sfd
+
+patch: conv2sfd $(TARGET:.ttf=.sfd) $(PATCHFILE)
+$(TARGET:.ttf=.sfd): $(SRCTTF:.ttf=.sfd) $(PATCHFILE)
+	patch -o $@ < $(PATCHFILE)
 
 clean:
 	-rm -rf $(SRCTTF:.ttf=.vtp) $(SRCTTF:.ttf=.sfd) *~
