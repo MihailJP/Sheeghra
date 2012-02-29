@@ -1,0 +1,26 @@
+--- RORaghuPunjabi.sfd	2012-02-29 02:45:31.243164000 +0900
++++ SheeghraGurmukhi.sfd	2012-02-29 23:18:04.338867200 +0900
+@@ -1,10 +1,10 @@
+ SplineFontDB: 3.0
+-FontName: RaghuPunjabiSans
+-FullName: RaghuPunjabi
+-FamilyName: RaghuPunjabi
++FontName: SheeghraGurmukhi
++FullName: SheeghraGurmukhi
++FamilyName: SheeghraGurmukhi
+ Weight: Book
+ Copyright: RaghuPunjabi(c) Centre for Development of Advanced Computing, Mumbai. Font Design: Prof.R.K.Joshi and Omkar Shende, assisted by Supriya Kharkar and Jui Mhatre. Script: Gurumukhi. Full Font. Contains font + Unicode set requirements.
+-Version: Original Version 1.00 (2005)
++Version: Mend Version 1.00a
+ ItalicAngle: 0
+ UnderlinePosition: -612
+ UnderlineWidth: 120
+@@ -14,7 +14,7 @@
+ LayerCount: 2
+ Layer: 0 1 "Back"  1
+ Layer: 1 1 "Fore"  0
+-XUID: [1021 373 1686186441 14110289]
++XUID: [1021 494 2031268696 13313285]
+ FSType: 2
+ OS2Version: 1
+ OS2_WeightWidthSlopeOnly: 0
