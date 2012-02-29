@@ -1,7 +1,9 @@
 .PHONY: all fetch conv2sfd patch clean distclean
 .SUFFIXES: .ttf .vps .sfd
 
-all: patch
+all: patch $(TARGET)
+$(TARGET): $(TARGET:.ttf=.sfd)
+	fontforge -lang=ff -c "Open(\"$<\");Generate(\"$@\")"
 
 fetch: $(SRCTTF) $(BASETTF) $(SRCDOC)
 $(SRCTTF):
@@ -20,8 +22,8 @@ $(SRCTTF:.ttf=.sfd): $(BASETTF) $(SRCTTF:.ttf=.vtp) $(SEDSCR)
 	rm tmp.sfd
 
 patch: conv2sfd $(TARGET:.ttf=.sfd) $(PATCHFILE)
-$(TARGET:.ttf=.sfd): $(SRCTTF:.ttf=.sfd) $(PATCHFILE)
-	patch -o $@ < $(PATCHFILE)
+$(TARGET:.ttf=.sfd): $(PATCHFILE) $(SRCTTF:.ttf=.sfd)
+	patch -o $@ < $<
 
 clean:
 	-rm -rf $(SRCTTF:.ttf=.vtp) $(SRCTTF:.ttf=.sfd) *~
