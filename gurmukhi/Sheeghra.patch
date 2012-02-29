@@ -1,5 +1,5 @@
 --- RORaghuPunjabi.sfd	2012-02-29 02:45:31.243164000 +0900
-+++ SheeghraGurmukhi.sfd	2012-02-29 23:18:04.338867200 +0900
++++ SheeghraGurmukhi.sfd	2012-03-01 00:36:21.813476600 +0900
 @@ -1,10 +1,10 @@
  SplineFontDB: 3.0
 -FontName: RaghuPunjabiSans
@@ -24,3 +24,433 @@
  FSType: 2
  OS2Version: 1
  OS2_WeightWidthSlopeOnly: 0
+@@ -53,9 +53,6 @@
+ OS2Vendor: 'NCST'
+ OS2CodePages: 00000001.00000000
+ OS2UnicodeRanges: 00000003.00000000.00000000.00000000
+-Lookup: 4 0 0 "'haln' HalantZWNJ"  {"HalantZWNJ"  } ['haln' ('guru' <'dflt' > ) ]
+-Lookup: 6 0 0 "'blwf' ZWJHalant"  {"ZWJHalant 0"  "ZWJHalant 1"  "ZWJHalant 2"  "ZWJHalant 3"  } ['blwf' ('guru' <'dflt' > ) ]
+-Lookup: 4 0 0 "'blwf' EatZWJ"  {"EatZWJ"  } ['blwf' ('guru' <'dflt' > ) ]
+ Lookup: 4 0 0 "'nukt' NuktSub"  {"NuktSub"  } ['nukt' ('guru' <'dflt' > ) ]
+ Lookup: 4 0 0 "'blwf' Blwfsub"  {"Blwfsub"  } ['blwf' ('guru' <'dflt' > ) ]
+ Lookup: 6 0 0 "'blwf' undoSmall"  {"undoSmall"  } ['blwf' ('guru' <'dflt' > ) ]
+@@ -68,7 +65,6 @@
+ Lookup: 6 0 0 "'abvs' BindiTippiSub"  {"BindiTippiSub 0"  "BindiTippiSub 1"  "BindiTippiSub 2"  "BindiTippiSub 3"  "BindiTippiSub 4"  "BindiTippiSub 5"  "BindiTippiSub 6"  } ['abvs' ('guru' <'dflt' > ) ]
+ Lookup: 4 0 0 "'abvs' MatraBindisub"  {"MatraBindisub"  } ['abvs' ('guru' <'dflt' > ) ]
+ Lookup: 6 0 0 "'abvs' VowelAdakBindi"  {"VowelAdakBindi 0"  "VowelAdakBindi 1"  } ['abvs' ('guru' <'dflt' > ) ]
+-Lookup: 1 0 0 "Single Substitution lookup 15"  {"Single Substitution lookup 15 subtable"  } []
+ Lookup: 2 0 0 "Multiple Substitution lookup 16"  {"Multiple Substitution lookup 16 subtable"  } []
+ Lookup: 2 0 0 "Multiple Substitution lookup 17"  {"Multiple Substitution lookup 17 subtable"  } []
+ Lookup: 4 0 0 "Ligature Substitution lookup 18"  {"Ligature Substitution lookup 18 subtable"  } []
+@@ -181,34 +177,6 @@
+  1
+   SeqLookup: 0 "Multiple Substitution lookup 16" 
+ EndFPST
+-ChainSub2: coverage "ZWJHalant 3"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 GuruHalant
+-  BCoverage: 12 DottedCircle
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 15" 
+-EndFPST
+-ChainSub2: coverage "ZWJHalant 2"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 GuruHalant
+-  BCoverage: 5 space
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 15" 
+-EndFPST
+-ChainSub2: coverage "ZWJHalant 1"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 GuruHalant
+-  BCoverage: 3 ZWJ
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 15" 
+-EndFPST
+-ChainSub2: coverage "ZWJHalant 0"  0 0 0 1
+- 1 1 0
+-  Coverage: 10 GuruHalant
+-  BCoverage: 988 GuruFullKa GuruFullKha GuruFullGa GuruFullGha GuruFullNga GuruFullCa GuruFullCha GuruFullJa GuruFullJha GuruFullNya GuruFullTta GuruFullTtha GuruFullDda GuruFullDdha GuruFullNna GuruFullTa GuruFullTha GuruFullDa GuruFullDha GuruFullNa GuruFullPa GuruFullPha GuruFullBa GuruFullBha GuruFullMa GuruFullYa GuruFullRa GuruFullLa GuruFullLla GuruFullVa GuruFullSha GuruFullSa GuruFullHa GuruFullKhha GuruFullGhha GuruFullZa GuruFullRra GuruFullFa GuruFullKaNukta GuruFullKhaNukta GuruFullGaNukta GuruFullGhaNukta GuruFullNgaNukta GuruFullCaNukta GuruFullChaNukta GuruFullJaNukta GuruFullJhaNukta GuruFullNyaNukta GuruFullTtaNukta GuruFullTthaNukta GuruFullDdaNukta GuruFullDdhaNukta GuruFullNnaNukta GuruFullTaNukta GuruFullThaNukta GuruFullDaNukta GuruFullDhaNukta GuruFullNaNukta GuruFullPaNukta GuruFullPhaNukta GuruFullBaNukta GuruFullBhaNukta GuruFullMaNukta GuruFullYaNukta GuruFullRaNukta GuruFullLaNukta GuruFullLlaNukta GuruFullVaNukta GuruFullShaNukta GuruFullSaNukta GuruFullHaNukta
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 15" 
+-EndFPST
+ ChainPos2: coverage "TippiAddakpos"  0 0 0 1
+  1 1 0
+   Coverage: 9 GuruAddak
+@@ -14170,7 +14138,6 @@
+  93 -289 93 -289 258 -510 c 1,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 17 subtable" GuruHalant GuruMatraI
+-Substitution2: "Single Substitution lookup 15 subtable" GuruFullKhaNuktaHalant
+ EndChar
+ 
+ StartChar: GuruFullKhha
+@@ -17822,8 +17789,6 @@
+ Refer: 63 2581 N 1 0 0 1 0 0 2
+ Refer: 96 2620 N 1 0 0 1 420 -70 2
+ Refer: 106 2637 N 1 0 0 1 1548 0 2
+-Substitution2: "EatZWNJ" GuruHalant
+-Ligature2: "HalantZWNJ" GuruHalant ZWNJ
+ EndChar
+ 
+ StartChar: GuruFullKhaNuktaHalant
+@@ -17836,8 +17801,6 @@
+ Refer: 64 2582 N 1 0 0 1 0 0 2
+ Refer: 96 2620 N 1 0 0 1 400 -70 2
+ Refer: 106 2637 N 1 0 0 1 1398 0 2
+-Substitution2: "EatZWNJ" GuruHalant
+-Ligature2: "EatZWJ" ZWJ GuruFullKhaNuktaHalant
+ EndChar
+ 
+ StartChar: GuruFullGaNuktaHalant
+@@ -17850,8 +17813,6 @@
+ Refer: 65 2583 N 1 0 0 1 0 0 2
+ Refer: 96 2620 N 1 0 0 1 320 -70 2
+ Refer: 106 2637 N 1 0 0 1 1548 0 2
+-Substitution2: "EatZWNJ" GuruHalant
+-Ligature2: "HalantZWNJ" GuruHalant ZWJ
+ EndChar
+ 
+ StartChar: GuruFullGhaNuktaHalant
+@@ -18374,7 +18335,7 @@
+  -393 -496 -393 -496 -318 -420 c 1,24,25
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullKa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullKa
++Ligature2: "Blwfsub" GuruHalant GuruFullKa
+ EndChar
+ 
+ StartChar: GuruSmallKha
+@@ -18518,7 +18479,7 @@
+  -285 -507 -285 -507 -238 -441 c 1,20,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullKha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullKha
++Ligature2: "Blwfsub" GuruHalant GuruFullKha
+ EndChar
+ 
+ StartChar: GuruSmallGa
+@@ -18659,7 +18620,7 @@
+  -458 -597 -458 -597 -458 -543 c 2,19,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullGa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullGa
++Ligature2: "Blwfsub" GuruHalant GuruFullGa
+ EndChar
+ 
+ StartChar: GuruSmallGha
+@@ -18801,7 +18762,7 @@
+  -164 -666 l 1,0,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullGha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullGha
++Ligature2: "Blwfsub" GuruHalant GuruFullGha
+ EndChar
+ 
+ StartChar: GuruSmallNga
+@@ -18958,7 +18919,7 @@
+  -372 -599 -372 -599 -307 -545 c 1,31,32
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullNga
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullNga
++Ligature2: "Blwfsub" GuruHalant GuruFullNga
+ EndChar
+ 
+ StartChar: GuruSmallCa
+@@ -19075,7 +19036,7 @@
+  -240 -467 -240 -467 -240 -386 c 1,19,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullCa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullCa
++Ligature2: "Blwfsub" GuruHalant GuruFullCa
+ EndChar
+ 
+ StartChar: GuruSmallCha
+@@ -19235,7 +19196,7 @@
+  -447 -597 l 1,32,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullCha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullCha
++Ligature2: "Blwfsub" GuruHalant GuruFullCha
+ EndChar
+ 
+ StartChar: GuruSmallJa
+@@ -19356,7 +19317,7 @@
+  -164 -666 l 1,0,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullJa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullJa
++Ligature2: "Blwfsub" GuruHalant GuruFullJa
+ EndChar
+ 
+ StartChar: GuruSmallJha
+@@ -19487,7 +19448,7 @@
+  -117 -128 l 1,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullJha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullJha
++Ligature2: "Blwfsub" GuruHalant GuruFullJha
+ EndChar
+ 
+ StartChar: GuruSmallNya
+@@ -19629,7 +19590,7 @@
+  -164 -666 l 1,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullNya
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullNya
++Ligature2: "Blwfsub" GuruHalant GuruFullNya
+ EndChar
+ 
+ StartChar: GuruSmallTta
+@@ -19738,7 +19699,7 @@
+  -136 -560 l 1,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullTta
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullTta
++Ligature2: "Blwfsub" GuruHalant GuruFullTta
+ EndChar
+ 
+ StartChar: GuruSmallTtha
+@@ -19848,7 +19809,7 @@
+  -206 -529 -206 -529 -206 -464 c 0,15,16
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullTtha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullTtha
++Ligature2: "Blwfsub" GuruHalant GuruFullTtha
+ EndChar
+ 
+ StartChar: GuruSmallDda
+@@ -19976,7 +19937,7 @@
+  -347 -608 -347 -608 -286 -584 c 1,33,34
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullDda
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullDda
++Ligature2: "Blwfsub" GuruHalant GuruFullDda
+ EndChar
+ 
+ StartChar: GuruSmallDdha
+@@ -20109,7 +20070,7 @@
+  -226 -606 -226 -606 -226 -564 c 0,27,28
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullDdha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullDdha
++Ligature2: "Blwfsub" GuruHalant GuruFullDdha
+ EndChar
+ 
+ StartChar: GuruSmallNna
+@@ -20224,7 +20185,7 @@
+  -258 -224 -258 -224 -106 -320 c 1,0,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullNna
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullNna
++Ligature2: "Blwfsub" GuruHalant GuruFullNna
+ EndChar
+ 
+ StartChar: GuruSmallTa
+@@ -20338,7 +20299,7 @@
+  -124 -389 -124 -389 -124 -489 c 0,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullTa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullTa
++Ligature2: "Blwfsub" GuruHalant GuruFullTa
+ EndChar
+ 
+ StartChar: GuruSmallTha
+@@ -20470,7 +20431,7 @@
+  -285 -507 -285 -507 -238 -441 c 1,18,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullTha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullTha
++Ligature2: "Blwfsub" GuruHalant GuruFullTha
+ EndChar
+ 
+ StartChar: GuruSmallDa
+@@ -20587,7 +20548,7 @@
+  -124 -580 l 1,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullDa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullDa
++Ligature2: "Blwfsub" GuruHalant GuruFullDa
+ EndChar
+ 
+ StartChar: GuruSmallDha
+@@ -20704,7 +20665,7 @@
+  -164 -666 l 1,0,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullDha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullDha
++Ligature2: "Blwfsub" GuruHalant GuruFullDha
+ EndChar
+ 
+ StartChar: GuruSmallNa
+@@ -20824,7 +20785,7 @@
+  -126 -327 -126 -327 -126 -487 c 0,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullNa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullNa
++Ligature2: "Blwfsub" GuruHalant GuruFullNa
+ EndChar
+ 
+ StartChar: GuruSmallPa
+@@ -20953,7 +20914,7 @@
+  -164 -666 l 1,0,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullPa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullPa
++Ligature2: "Blwfsub" GuruHalant GuruFullPa
+ EndChar
+ 
+ StartChar: GuruSmallPha
+@@ -21083,7 +21044,7 @@
+  -227 -598 -227 -598 -227 -540 c 0,25,26
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullPha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullPha
++Ligature2: "Blwfsub" GuruHalant GuruFullPha
+ EndChar
+ 
+ StartChar: GuruSmallBa
+@@ -21216,7 +21177,7 @@
+  -292 -535 -292 -535 -240 -498 c 1,19,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullBa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullBa
++Ligature2: "Blwfsub" GuruHalant GuruFullBa
+ EndChar
+ 
+ StartChar: GuruSmallBha
+@@ -21352,7 +21313,7 @@
+  -323 -412 -323 -412 -279 -349 c 1,34,35
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullBha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullBha
++Ligature2: "Blwfsub" GuruHalant GuruFullBha
+ EndChar
+ 
+ StartChar: GuruSmallMa
+@@ -21487,7 +21448,7 @@
+  -164 -666 l 1,0,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullMa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullMa
++Ligature2: "Blwfsub" GuruHalant GuruFullMa
+ EndChar
+ 
+ StartChar: GuruSmallYa
+@@ -21621,7 +21582,7 @@
+  -164 -666 l 1,0,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullYa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullYa
++Ligature2: "Blwfsub" GuruHalant GuruFullYa
+ EndChar
+ 
+ StartChar: GuruSmallRa
+@@ -21718,7 +21679,7 @@
+  -219 -542 -219 -542 -164 -656 c 1,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullRa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullRa
++Ligature2: "Blwfsub" GuruHalant GuruFullRa
+ EndChar
+ 
+ StartChar: GuruSmallLa
+@@ -21848,7 +21809,7 @@
+  -122 -353 -122 -353 -122 -476 c 0,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullLa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullLa
++Ligature2: "Blwfsub" GuruHalant GuruFullLa
+ EndChar
+ 
+ StartChar: GuruSmallVa
+@@ -21976,7 +21937,7 @@
+  -164 -674 l 1,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullVa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullVa
++Ligature2: "Blwfsub" GuruHalant GuruFullVa
+ EndChar
+ 
+ StartChar: GuruSmallSha
+@@ -22121,7 +22082,7 @@
+  -350 -602 -350 -602 -350 -638 c 256,18,19
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullSha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullSha
++Ligature2: "Blwfsub" GuruHalant GuruFullSha
+ EndChar
+ 
+ StartChar: GuruSmallSa
+@@ -22246,7 +22207,7 @@
+  -164 -666 l 1,0,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullSa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullSa
++Ligature2: "Blwfsub" GuruHalant GuruFullSa
+ EndChar
+ 
+ StartChar: GuruSmallHa
+@@ -22352,7 +22313,7 @@
+  -164 -458 l 2,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullHa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullHa
++Ligature2: "Blwfsub" GuruHalant GuruFullHa
+ EndChar
+ 
+ StartChar: GuruSmallKhha
+@@ -22516,7 +22477,7 @@
+  -285 -507 -285 -507 -238 -441 c 1,28,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullKhha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullKhha
++Ligature2: "Blwfsub" GuruHalant GuruFullKhha
+ EndChar
+ 
+ StartChar: GuruSmallGhha
+@@ -22676,7 +22637,7 @@
+  -458 -597 -458 -597 -458 -543 c 2,27,-1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullGhha
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullGhha
++Ligature2: "Blwfsub" GuruHalant GuruFullGhha
+ EndChar
+ 
+ StartChar: GuruSmallZa
+@@ -22812,7 +22773,7 @@
+  -340 -602 -340 -602 -340 -638 c 256,19,20
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullZa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullZa
++Ligature2: "Blwfsub" GuruHalant GuruFullZa
+ EndChar
+ 
+ StartChar: GuruSmallRra
+@@ -22980,7 +22941,7 @@
+  -124 -362 -124 -362 -124 -449 c 0,0,1
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullRra
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullRra
++Ligature2: "Blwfsub" GuruHalant GuruFullRra
+ EndChar
+ 
+ StartChar: GuruSmallFa
+@@ -23127,7 +23088,7 @@
+  -227 -598 -227 -598 -227 -540 c 0,33,34
+ EndSplineSet
+ MultipleSubs2: "Multiple Substitution lookup 16 subtable" GuruHalant GuruFullFa
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullFa
++Ligature2: "Blwfsub" GuruHalant GuruFullFa
+ EndChar
+ 
+ StartChar: GuruHalfYa
+@@ -27445,7 +27406,7 @@
+  -892 -602 -892 -602 -856 -602 c 256,50,51
+  -820 -602 -820 -602 -820 -638 c 256,44,45
+ EndSplineSet
+-Ligature2: "Blwfsub" GuruFullKhaNuktaHalant GuruFullLla
++Ligature2: "Blwfsub" GuruHalant GuruFullLla
+ EndChar
+ 
+ StartChar: ZWNJ
