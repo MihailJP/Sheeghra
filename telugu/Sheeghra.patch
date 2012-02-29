@@ -1,0 +1,799 @@
+--- RORaghuTelugu.sfd	2012-02-29 02:45:40.649414000 +0900
++++ SheeghraTelugu.sfd	2012-03-01 03:05:10.722656200 +0900
+@@ -1,10 +1,10 @@
+ SplineFontDB: 3.0
+-FontName: RaghuTeluguSans
+-FullName: RaghuTelugu
+-FamilyName: RaghuTelugu
++FontName: SheeghraTelugu
++FullName: SheeghraTelugu
++FamilyName: SheeghraTelugu
+ Weight: Book
+ Copyright: RaghuTelugu(c) Centre for Development of Advanced Computing, Mumbai. Font Design: Prof.R.K.Joshi and Omkar Shende, assisted by Jui Mhatre and Supriya Kharkar. Script: Telugu. Full Font. Contains font + Unicode set requirements.
+-Version: Original Version 1.00 (2005)
++Version: Mend Version 1.00a
+ ItalicAngle: 0
+ UnderlinePosition: -300
+ UnderlineWidth: 120
+@@ -14,7 +14,7 @@
+ LayerCount: 2
+ Layer: 0 1 "Back"  1
+ Layer: 1 1 "Fore"  0
+-XUID: [1021 674 778785512 5308528]
++XUID: [1021 674 778785512 3242996]
+ FSType: 2
+ OS2Version: 1
+ OS2_WeightWidthSlopeOnly: 0
+@@ -54,13 +54,12 @@
+ OS2CodePages: 00000001.00000000
+ OS2UnicodeRanges: 00000003.00000000.00000000.00000000
+ Lookup: 6 0 0 "'blwf' RaVattu"  {"RaVattu"  } ['blwf' ('telu' <'dflt' > ) ]
+-Lookup: 4 0 0 "'blwf' ZWJSBeg"  {"ZWJSBeg"  } ['blwf' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'blwf' HalantSub"  {"HalantSub 0"  "HalantSub 1"  "HalantSub 2"  "HalantSub 3"  "HalantSub 4"  } ['blwf' ('telu' <'dflt' > ) ]
+ Lookup: 4 8 0 "'akhn' Akhand"  {"Akhand"  } ['akhn' ('telu' <'dflt' > ) ]
++Lookup: 4 0 0 "'haln' Halant Forms in Telugu lookup 3"  {"'haln' Halant Forms in Telugu lookup 3 subtable"  } ['haln' ('telu' <'dflt' > ) ]
+ Lookup: 4 0 0 "'blwf' Small1Sub"  {"Small1Sub"  } ['blwf' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'blwf' Small2Sub"  {"Small2Sub"  } ['blwf' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'blwf' Small3Sub"  {"Small3Sub"  } ['blwf' ('telu' <'dflt' > ) ]
+-Lookup: 1 0 0 "'blwf' ZWJSEnd"  {"ZWJSEnd"  } ['blwf' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'abvs' AltCons"  {"AltCons"  } ['abvs' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'abvs' AltMatra"  {"AltMatra"  } ['abvs' ('telu' <'dflt' > ) ]
+ Lookup: 4 0 0 "'abvs' MatraLigs"  {"MatraLigs"  } ['abvs' ('telu' <'dflt' > ) ]
+@@ -71,13 +70,13 @@
+ Lookup: 6 0 0 "'abvs' AaMatra3"  {"AaMatra3"  } ['abvs' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'abvs' AaMatra4"  {"AaMatra4"  } ['abvs' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'blws' AltLengthMark1"  {"AltLengthMark1 0"  "AltLengthMark1 1"  } ['blws' ('telu' <'dflt' > ) ]
++Lookup: 4 0 0 "'blws' Below Base Substitutions in Telugu lookup 18"  {"'blws' Below Base Substitutions in Telugu lookup 18 subtable"  } ['blws' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'psts' UMatra2"  {"UMatra2"  } ['psts' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'psts' UMatra3"  {"UMatra3"  } ['psts' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'blws' SmallRaThree"  {"SmallRaThree"  } ['blws' ('telu' <'dflt' > ) ]
+ Lookup: 6 0 0 "'blws' SmallRaTwo1"  {"SmallRaTwo1"  } ['blws' ('telu' <'dflt' > ) ]
+ Lookup: 1 0 0 "'abvs' HalantToMark"  {"HalantToMark"  } ['abvs' ('telu' <'dflt' > ) ]
+-Lookup: 4 0 0 "Ligature Substitution lookup 23"  {"Ligature Substitution lookup 23 subtable"  } []
+-Lookup: 1 0 0 "Single Substitution lookup 24"  {"Single Substitution lookup 24 subtable"  } []
++Lookup: 4 0 0 "Ligature Substitution lookup 23"  {"Ligature Substitution lookup 23 subtable"  } ['blwf' ('telu' <'dflt' > ) ]
+ Lookup: 1 0 0 "Single Substitution lookup 25"  {"Single Substitution lookup 25 subtable"  } []
+ Lookup: 1 0 0 "Single Substitution lookup 26"  {"Single Substitution lookup 26 subtable"  } []
+ Lookup: 1 0 0 "Single Substitution lookup 27"  {"Single Substitution lookup 27 subtable"  } []
+@@ -243,41 +242,6 @@
+  1
+   SeqLookup: 0 "Single Substitution lookup 25" 
+ EndFPST
+-ChainSub2: coverage "HalantSub 4"  0 0 0 1
+- 1 1 0
+-  Coverage: 9 TelHalant
+-  BCoverage: 12 DottedCircle
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 24" 
+-EndFPST
+-ChainSub2: coverage "HalantSub 3"  0 0 0 1
+- 1 1 0
+-  Coverage: 9 TelHalant
+-  BCoverage: 5 space
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 24" 
+-EndFPST
+-ChainSub2: coverage "HalantSub 2"  0 0 0 1
+- 1 1 0
+-  Coverage: 9 TelHalant
+-  BCoverage: 41 TelMatraU TelMatraUu TelMatraR TelMatraRr
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 24" 
+-EndFPST
+-ChainSub2: coverage "HalantSub 1"  0 0 0 1
+- 1 1 0
+-  Coverage: 9 TelHalant
+-  BCoverage: 100 TelMatraAa TelMatraI TelMatraIi TelMatraE TelMatraEe TelMatraO TelMatraOo TelMatraAu TelAiLengthMark
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 24" 
+-EndFPST
+-ChainSub2: coverage "HalantSub 0"  0 0 0 1
+- 1 1 0
+-  Coverage: 9 TelHalant
+-  BCoverage: 370 TelKaFull TelKhaFull TelGaFull TelGhaFull TelNgaFull TelCaFull TelChaFull TelJaFull TelJhaFull TelNyaFull TelTtaFull TelTthaFull TelDdaFull TelDdhaFull TelNnaFull TelTaFull TelThaFull TelDaFull TelDhaFull TelNaFull TelPaFull TelPhaFull TelBaFull TelBhaFull TelMaFull TelYaFull TelRaFull TelRraFull TelLaFull TelLlaFull TelVaFull TelShaFull TelSsaFull TelSaFull TelHaFull
+- 1
+-  SeqLookup: 0 "Single Substitution lookup 24" 
+-EndFPST
+ ChainSub2: coverage "RaVattu"  0 0 0 1
+  2 0 1
+   Coverage: 9 TelHalant
+@@ -468,8 +432,8 @@
+   0
+   213
+   372
+-  1
+-  1
++  0
++  0
+ EndShort
+ LangName: 1033 "RaghuTelugu+AKkA Centre for Development of Advanced Computing, Mumbai. Font Design: Prof.R.K.Joshi and Omkar Shende, assisted by Jui Mhatre and Supriya Kharkar. Script: Telugu. Full Font. Contains font +- Unicode set requirements." "" "" "C-DAC Mumbai (formerly NCST): RaghuTelugu: Original Version 1.00 (FontersNCST)" "" "Original Version 1.00 (2005)" "" "RaghuTelugu - Trademark of Centre for Development of Advanced Computing (C-DAC) Mumbai (formerly NCST)." "Centre for Development of Advanced Computing (C-DAC) Mumbai, (formerly NCST)." "Prof. R.K.Joshi and Omkar Shende" "RaghuTelugu is the name of a digital font - a typeface in Telugu Script to be used for composing text in Telugu language. It has been designed in Open Type Format with Unicode standards and reordering as well as combining characters according to the visual syllable standard of IndiX Compugraphy. +AA0ACgANAAoA-This first Version called RaghuTelugu font Original Version 1.00 (2005) is a non-hinted text face, to be used for continuous text in Telugu language. And is recommended to be used in minimum 16pt. size on screen and 10pt. size on paper (see the README file). The designed letterforms of RaghuTelugu font in Telugu script, have a less contrast in thick & thin strokes and acquire a traditional look with thick rhythmic curves at the base.+AA0ACgANAAoA-RaghuTelugu font Original Version 1.00 (2005) has been designed and developed, by Prof. R. K. Joshi (TypeFont Design Director, Visiting Design Specialist at C-DAC Mumbai) in association with Mr. Omkar Shende (TypeFont Designer), assisted by Ms. Jui Mhatre and Ms. Supriya Kharkar at C-DAC Mumbai (formerly NCST)." "http://www.cdacmumbai.in/projects/indix" "http://staff.cdamumbai.in/rkjoshi" "1. RaghuTelugu font Original Version 1.00 (2005) +AKkA Centre for Development of Advanced Computing, Mumbai.+AA0ACgANAAoA-2. RaghuTelugu font Original Version 1.00 (2005) has been designed and developed, by Prof. R. K. Joshi (TypeFont Design Director, Visiting Design Specialist at C-DAC Mumbai) in association with Mr. Omkar Shende (TypeFont Designer), assisted by Ms. Jui Mhatre and Ms. Supriya Kharkar at C-DAC Mumbai (formerly NCST) under IndiX2, Project funded by TDIL Programme, Department of Information Technology, Ministry of Communications and Information Technology, Govt. of India.+AA0ACgANAAoA-3. RaghuTelugu font Original Version 1.00 (2005) has been released under GNU GPL Version 2 (see the COPYING file)." "http://www.cdacmumbai.in/projects/indix" 
+ Encoding: Original
+@@ -5354,8 +5318,6 @@
+  332 186 332 186 362 156 c 128,-1,35
+  392 126 392 126 392 83 c 256,24,25
+ EndSplineSet
+-Substitution2: "ZWJSEnd" TelHalant
+-Ligature2: "ZWJSBeg" TelHalant ZWJ
+ EndChar
+ 
+ StartChar: HalantZWNJ
+@@ -5432,8 +5394,6 @@
+  832 670 l 1,3,-1
+  832 540 l 1,0,-1
+ EndSplineSet
+-Substitution2: "ZWJSEnd" TelHalant
+-Ligature2: "ZWJSBeg" TelHalant ZWNJ
+ EndChar
+ 
+ StartChar: ZWJHalant
+@@ -5509,8 +5469,6 @@
+  1478 671 l 1,3,-1
+  1478 541 l 1,0,-1
+ EndSplineSet
+-Substitution2: "ZWJSEnd" TelHalant
+-Ligature2: "ZWJSBeg" ZWJ TelHalant
+ EndChar
+ 
+ StartChar: glyph47
+@@ -16815,8 +16773,6 @@
+  0 1760 l 1,24,-1
+  0 1650 l 1,0,-1
+ EndSplineSet
+-Substitution2: "Single Substitution lookup 24 subtable" ZWJHalant
+-Substitution2: "HalantToMark" TelHalantMark
+ EndChar
+ 
+ StartChar: TelLengthMark
+@@ -18755,6 +18711,7 @@
+  678 472 678 472 544 472 c 0,49,50
+  424 472 424 472 344 561 c 1,41,42
+ EndSplineSet
++Ligature2: "'rphf' Reph Form in Telugu lookup 5 subtable" TelRaFull TelHalant
+ EndChar
+ 
+ StartChar: TelMatraAaThree
+@@ -24619,7 +24576,7 @@
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 26 subtable" TelKaSmallThree
+ Substitution2: "Single Substitution lookup 25 subtable" TelKaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelKaFull
++Ligature2: "Small1Sub" TelHalant TelKaFull
+ EndChar
+ 
+ StartChar: TelKhaSmallOne
+@@ -24796,7 +24753,7 @@
+  -7 -605 -7 -605 44 -530 c 1,63,64
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelKhaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelKhaFull
++Ligature2: "Small1Sub" TelHalant TelKhaFull
+ EndChar
+ 
+ StartChar: TelGaSmallOne
+@@ -24892,7 +24849,7 @@
+  582 -276 582 -276 582 -431 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelGaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelGaFull
++Ligature2: "Small1Sub" TelHalant TelGaFull
+ EndChar
+ 
+ StartChar: TelGhaSmallOne
+@@ -25060,7 +25017,7 @@
+  -181 -586 -181 -586 -181 -485 c 0,60,61
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelGhaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelGhaFull
++Ligature2: "Small1Sub" TelHalant TelGhaFull
+ EndChar
+ 
+ StartChar: TelNgaSmallOne
+@@ -25243,7 +25200,7 @@
+  568 -352 568 -352 568 -465 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelNgaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelNgaFull
++Ligature2: "Small1Sub" TelHalant TelNgaFull
+ EndChar
+ 
+ StartChar: TelCaSmallOne
+@@ -25383,7 +25340,7 @@
+  1086 500 1086 500 1086 50 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelCaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelCaFull
++Ligature2: "Small1Sub" TelHalant TelCaFull
+ EndChar
+ 
+ StartChar: TelChaSmallOne
+@@ -25538,7 +25495,7 @@
+  1086 500 1086 500 1086 50 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelChaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelChaFull
++Ligature2: "Small1Sub" TelHalant TelChaFull
+ EndChar
+ 
+ StartChar: TelJaSmallOne
+@@ -25704,7 +25661,7 @@
+  580 -352 580 -352 580 -465 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelJaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelJaFull
++Ligature2: "Small1Sub" TelHalant TelJaFull
+ EndChar
+ 
+ StartChar: TelJhaSmallOne
+@@ -25877,7 +25834,7 @@
+  -76 -459 -76 -459 -76 -368 c 0,64,65
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelJhaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelJhaFull
++Ligature2: "Small1Sub" TelHalant TelJhaFull
+ EndChar
+ 
+ StartChar: TelNyaSmallOne
+@@ -26075,7 +26032,7 @@
+  54 -574 54 -574 133 -527 c 1,57,58
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelNyaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelNyaFull
++Ligature2: "Small1Sub" TelHalant TelNyaFull
+ EndChar
+ 
+ StartChar: TelTtaSmallOne
+@@ -26227,7 +26184,7 @@
+  103 -340 103 -340 103 -255 c 0,49,50
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelTtaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelTtaFull
++Ligature2: "Small1Sub" TelHalant TelTtaFull
+ EndChar
+ 
+ StartChar: TelTthaSmallOne
+@@ -26344,7 +26301,7 @@
+  189 -340 189 -340 189 -366 c 256,28,29
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelTthaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelTthaFull
++Ligature2: "Small1Sub" TelHalant TelTthaFull
+ EndChar
+ 
+ StartChar: TelDdaSmallOne
+@@ -26490,7 +26447,7 @@
+  510 -519 510 -519 510 -460 c 256,45,46
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelDdaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelDdaFull
++Ligature2: "Small1Sub" TelHalant TelDdaFull
+ EndChar
+ 
+ StartChar: TelDdhaSmallOne
+@@ -26653,7 +26610,7 @@
+  510 -519 510 -519 510 -460 c 256,53,54
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelDdhaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelDdhaFull
++Ligature2: "Small1Sub" TelHalant TelDdhaFull
+ EndChar
+ 
+ StartChar: TelNnaSmallOne
+@@ -26823,7 +26780,7 @@
+  455 -584 455 -584 485 -517 c 1,59,60
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelNnaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelNnaFull
++Ligature2: "Small1Sub" TelHalant TelNnaFull
+ EndChar
+ 
+ StartChar: TelTaSmallOne
+@@ -26935,7 +26892,7 @@
+  378 -426 378 -426 378 -380 c 256,17,18
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelTaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelTaFull
++Ligature2: "Small1Sub" TelHalant TelTaFull
+ EndChar
+ 
+ StartChar: TelThaSmallOne
+@@ -27088,7 +27045,7 @@
+  209 -284 209 -284 209 -339 c 256,51,52
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelThaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelThaFull
++Ligature2: "Small1Sub" TelHalant TelThaFull
+ EndChar
+ 
+ StartChar: TelDaSmallOne
+@@ -27209,7 +27166,7 @@
+  461 -488 461 -488 461 -426 c 0,20,21
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelDaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelDaFull
++Ligature2: "Small1Sub" TelHalant TelDaFull
+ EndChar
+ 
+ StartChar: TelDhaSmallOne
+@@ -27347,7 +27304,7 @@
+  461 -488 461 -488 461 -426 c 0,28,29
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelDhaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelDhaFull
++Ligature2: "Small1Sub" TelHalant TelDhaFull
+ EndChar
+ 
+ StartChar: TelNaSmallOne
+@@ -27466,7 +27423,7 @@
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 26 subtable" TelNaSmallThree
+ Substitution2: "Single Substitution lookup 25 subtable" TelNaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelNaFull
++Ligature2: "Small1Sub" TelHalant TelNaFull
+ EndChar
+ 
+ StartChar: TelPaSmallOne
+@@ -27590,7 +27547,7 @@
+  301 -413 301 -413 301 -345 c 0,37,38
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelPaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelPaFull
++Ligature2: "Small1Sub" TelHalant TelPaFull
+ EndChar
+ 
+ StartChar: TelPhaSmallOne
+@@ -27728,7 +27685,7 @@
+  301 -413 301 -413 301 -345 c 0,42,43
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelPhaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelPhaFull
++Ligature2: "Small1Sub" TelHalant TelPhaFull
+ EndChar
+ 
+ StartChar: TelBaSmallOne
+@@ -27883,7 +27840,7 @@
+  1046 499 1046 499 1046 50 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelBaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelBaFull
++Ligature2: "Small1Sub" TelHalant TelBaFull
+ EndChar
+ 
+ StartChar: TelBhaSmallOne
+@@ -28054,7 +28011,7 @@
+  1046 499 1046 499 1046 50 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelBhaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelBhaFull
++Ligature2: "Small1Sub" TelHalant TelBhaFull
+ EndChar
+ 
+ StartChar: TelMaSmallOne
+@@ -28202,7 +28159,7 @@
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 26 subtable" TelMaSmallThree
+ Substitution2: "Single Substitution lookup 25 subtable" TelMaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelMaFull
++Ligature2: "Small1Sub" TelHalant TelMaFull
+ EndChar
+ 
+ StartChar: TelYaSmallOne
+@@ -28355,7 +28312,7 @@
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 26 subtable" TelYaSmallThree
+ Substitution2: "Single Substitution lookup 25 subtable" TelYaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelYaFull
++Ligature2: "Small1Sub" TelHalant TelYaFull
+ EndChar
+ 
+ StartChar: TelRaSmallOne
+@@ -28437,7 +28394,7 @@
+ Substitution2: "Single Substitution lookup 26 subtable" TelRaSmallThree
+ Substitution2: "Single Substitution lookup 25 subtable" TelRaSmallTwo
+ Ligature2: "Ligature Substitution lookup 23 subtable" TelHalant TelRaFull
+-Ligature2: "Small1Sub" ZWJHalant TelRaFull
++Ligature2: "Small1Sub" TelHalant TelRaFull
+ EndChar
+ 
+ StartChar: TelRraSmallOne
+@@ -28611,7 +28568,7 @@
+  510 -441 510 -441 510 -363 c 0,50,51
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelRraSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelRraFull
++Ligature2: "Small1Sub" TelHalant TelRraFull
+ EndChar
+ 
+ StartChar: TelLaSmallOne
+@@ -28734,7 +28691,7 @@
+  570 -273 570 -273 570 -383 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelLaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelLaFull
++Ligature2: "Small1Sub" TelHalant TelLaFull
+ EndChar
+ 
+ StartChar: TelLlaSmallOne
+@@ -28886,7 +28843,7 @@
+  781 -418 781 -418 781 -358 c 0,60,61
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelLlaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelLlaFull
++Ligature2: "Small1Sub" TelHalant TelLlaFull
+ EndChar
+ 
+ StartChar: TelVaSmallOne
+@@ -29038,7 +28995,7 @@
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 26 subtable" TelVaSmallThree
+ Substitution2: "Single Substitution lookup 25 subtable" TelVaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelVaFull
++Ligature2: "Small1Sub" TelHalant TelVaFull
+ EndChar
+ 
+ StartChar: TelShaSmallOne
+@@ -29171,7 +29128,7 @@
+  820 -358 820 -358 820 -261 c 0,37,38
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelShaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelShaFull
++Ligature2: "Small1Sub" TelHalant TelShaFull
+ EndChar
+ 
+ StartChar: TelSsaSmallOne
+@@ -29307,7 +29264,7 @@
+  45 -533 45 -533 45 -485 c 0,39,40
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelSsaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelSsaFull
++Ligature2: "Small1Sub" TelHalant TelSsaFull
+ EndChar
+ 
+ StartChar: TelSaSmallOne
+@@ -29437,7 +29394,7 @@
+  996 306 996 306 996 50 c 0,0,1
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelSaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelSaFull
++Ligature2: "Small1Sub" TelHalant TelSaFull
+ EndChar
+ 
+ StartChar: TelHaSmallOne
+@@ -29608,7 +29565,7 @@
+  -186 -533 -186 -533 -186 -485 c 256,56,57
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 25 subtable" TelHaSmallTwo
+-Ligature2: "Small1Sub" ZWJHalant TelHaFull
++Ligature2: "Small1Sub" TelHalant TelHaFull
+ EndChar
+ 
+ StartChar: TelKaSmallTwo
+@@ -35632,7 +35589,7 @@
+  1442 -500 l 1,57,58
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 29 subtable" TelKSsaPartial
+-Ligature2: "Akhand" TelKaFull ZWJHalant TelSsaFull
++Ligature2: "Akhand" TelKaFull TelHalant TelSsaFull
+ EndChar
+ 
+ StartChar: TelShJaFull
+@@ -35805,7 +35762,7 @@
+  649 746 649 746 701 789 c 0,88,89
+  758 835 758 835 758 912 c 0,76,77
+ EndSplineSet
+-Ligature2: "Akhand" TelShaFull ZWJHalant TelJaFull
++Ligature2: "Akhand" TelShaFull TelHalant TelJaFull
+ EndChar
+ 
+ StartChar: TelTKRa
+@@ -36097,6 +36054,7 @@
+  916 661 916 661 916 727 c 0,126,127
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 29 subtable" TelTKRaPartial
++Ligature2: "'blws' Below Base Substitutions in Telugu lookup 18 subtable" TelTaFull TelKaSmallOne TelRaSmallOne
+ EndChar
+ 
+ StartChar: TelSsKRa
+@@ -36362,6 +36320,7 @@
+ EndSplineSet
+ Substitution2: "Single Substitution lookup 29 subtable" TelSsKRaPartial
+ Substitution2: "Single Substitution lookup 27 subtable" TelSsKRaAlt
++Ligature2: "'blws' Below Base Substitutions in Telugu lookup 18 subtable" TelSsaFull TelKaSmallOne TelRaSmallOne
+ EndChar
+ 
+ StartChar: TelKSsaPartial
+@@ -48516,6 +48475,7 @@
+  1019 705 1019 705 1120 672 c 0,63,64
+  1312 610 1312 610 1312 406 c 0,0,1
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelKaFull TelHalant
+ EndChar
+ 
+ StartChar: TelKhaHalant
+@@ -48749,6 +48709,7 @@
+  296 170 296 170 536 170 c 0,111,112
+  694 170 694 170 800 291 c 1,103,104
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelKhaFull TelHalant
+ EndChar
+ 
+ StartChar: TelGaHalant
+@@ -48902,6 +48863,7 @@
+  1105 1220 1105 1220 1287 991 c 0,55,56
+  1456 778 1456 778 1456 494 c 0,0,1
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelGaFull TelHalant
+ EndChar
+ 
+ StartChar: TelGhaHalant
+@@ -49136,6 +49098,7 @@
+  584 150 584 150 640 192 c 0,110,111
+  702 238 702 238 702 319 c 0,96,97
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelGhaFull TelHalant
+ EndChar
+ 
+ StartChar: TelNgaHalant
+@@ -49379,6 +49342,7 @@
+  1417 758 l 1,89,90
+  1584 619 1584 619 1584 402 c 0,0,1
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelNgaFull TelHalant
+ EndChar
+ 
+ StartChar: TelCaHalant
+@@ -49576,6 +49540,7 @@
+  1201 1220 1201 1220 1398 989 c 0,72,73
+  1584 770 1584 770 1584 456 c 0,0,1
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelCaFull TelHalant
+ EndChar
+ 
+ StartChar: TelChaHalant
+@@ -49790,6 +49755,7 @@
+  800 -12 800 -12 892 100 c 1,84,85
+  984 -18 984 -18 984 -102 c 0,74,75
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelChaFull TelHalant
+ EndChar
+ 
+ StartChar: TelJaHalant
+@@ -50029,6 +49995,7 @@
+  1417 758 l 1,109,110
+  1584 618 1584 618 1584 402 c 0,0,1
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelJaFull TelHalant
+ EndChar
+ 
+ StartChar: TelJhaHalant
+@@ -50259,6 +50226,7 @@
+  953 170 953 170 1081 286 c 0,107,108
+  1214 407 1214 407 1214 604 c 0,93,94
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelJhaFull TelHalant
+ EndChar
+ 
+ StartChar: TelNyaHalant
+@@ -50504,6 +50472,7 @@
+  577 170 577 170 888 170 c 0,100,101
+  1057 170 1057 170 1206 280 c 1,92,93
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelNyaFull TelHalant
+ EndChar
+ 
+ StartChar: TelTtaHalant
+@@ -50720,6 +50689,7 @@
+  649 746 649 746 701 789 c 0,96,97
+  758 835 758 835 758 912 c 0,84,85
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelTtaFull TelHalant
+ EndChar
+ 
+ StartChar: TelTthaHalant
+@@ -50890,6 +50860,7 @@
+  810 734 810 734 839 705 c 128,-1,64
+  868 676 868 676 868 634 c 0,53,54
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelTthaFull TelHalant
+ EndChar
+ 
+ StartChar: TelDdaHalant
+@@ -51100,6 +51071,7 @@
+  1414 293 1414 293 1470 328 c 1,90,91
+  1484 368 1484 368 1484 426 c 0,79,80
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelDdaFull TelHalant
+ EndChar
+ 
+ StartChar: TelDdhaHalant
+@@ -51324,6 +51296,7 @@
+  1414 293 1414 293 1470 328 c 1,102,103
+  1484 368 1484 368 1484 426 c 0,91,92
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelDdhaFull TelHalant
+ EndChar
+ 
+ StartChar: TelNnaHalant
+@@ -51559,6 +51532,7 @@
+  1320 129 1320 129 1373 169 c 0,109,110
+  1432 213 1432 213 1432 288 c 0,95,96
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelNnaFull TelHalant
+ EndChar
+ 
+ StartChar: TelTaHalant
+@@ -51782,6 +51756,7 @@
+  542 576 542 576 589 617.5 c 128,-1,97
+  636 659 636 659 636 727 c 256,85,86
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelTaFull TelHalant
+ EndChar
+ 
+ StartChar: TelThaHalant
+@@ -51989,6 +51964,7 @@
+  934 864 934 864 963 835 c 128,-1,93
+  992 806 992 806 992 764 c 0,82,83
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelThaFull TelHalant
+ EndChar
+ 
+ StartChar: TelDaHalant
+@@ -52160,6 +52136,7 @@
+  1350 170 1350 170 1421 269 c 0,68,69
+  1484 357 1484 357 1484 488 c 0,47,48
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelDaFull TelHalant
+ EndChar
+ 
+ StartChar: TelDhaHalant
+@@ -52348,6 +52325,7 @@
+  1350 170 1350 170 1421 269 c 0,80,81
+  1484 357 1484 357 1484 488 c 0,59,60
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelDhaFull TelHalant
+ EndChar
+ 
+ StartChar: TelNaHalant
+@@ -52534,6 +52512,7 @@
+  1292 1220 1292 1220 1447 995 c 0,66,67
+  1584 796 1584 796 1584 538 c 0,0,1
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelNaFull TelHalant
+ EndChar
+ 
+ StartChar: TelPaHalant
+@@ -52723,6 +52702,7 @@
+  584 150 584 150 640 192 c 0,81,82
+  702 238 702 238 702 319 c 0,67,68
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelPaFull TelHalant
+ EndChar
+ 
+ StartChar: TelPhaHalant
+@@ -52929,6 +52909,7 @@
+  584 150 584 150 640 192 c 0,93,94
+  702 238 702 238 702 319 c 0,79,80
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelPhaFull TelHalant
+ EndChar
+ 
+ StartChar: TelBaHalant
+@@ -53133,6 +53114,7 @@
+  1324 1220 1324 1220 1465 988 c 0,84,85
+  1584 793 1584 793 1584 518 c 0,0,1
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelBaFull TelHalant
+ EndChar
+ 
+ StartChar: TelBhaHalant
+@@ -53354,6 +53336,7 @@
+  790 -12 790 -12 882 100 c 1,96,97
+  974 -18 974 -18 974 -102 c 0,86,87
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelBhaFull TelHalant
+ EndChar
+ 
+ StartChar: TelMaHalant
+@@ -53568,6 +53551,7 @@
+  584 150 584 150 640 192 c 0,100,101
+  702 238 702 238 702 319 c 0,86,87
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelMaFull TelHalant
+ EndChar
+ 
+ StartChar: TelYaHalant
+@@ -53774,6 +53758,7 @@
+  953 170 953 170 1081 286 c 0,97,98
+  1214 407 1214 407 1214 604 c 0,83,84
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelYaFull TelHalant
+ EndChar
+ 
+ StartChar: TelRaHalant
+@@ -53925,6 +53910,7 @@
+  968 170 968 170 1101 286 c 0,51,52
+  1240 407 1240 407 1240 604 c 0,39,40
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelRaFull TelHalant
+ EndChar
+ 
+ StartChar: TelRraHalant
+@@ -54159,6 +54145,7 @@
+  1135 170 1135 170 1258 170 c 0,118,119
+  1564 170 1564 170 1564 646 c 0,94,95
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelRraFull TelHalant
+ EndChar
+ 
+ StartChar: TelLaHalant
+@@ -54339,6 +54326,7 @@
+  649 746 649 746 701 789 c 0,78,79
+  758 835 758 835 758 912 c 0,66,67
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelLaFull TelHalant
+ EndChar
+ 
+ StartChar: TelLlaHalant
+@@ -54552,6 +54540,7 @@
+  991 170 991 170 1048 208 c 0,100,101
+  1114 252 1114 252 1114 327 c 0,90,91
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelLlaFull TelHalant
+ EndChar
+ 
+ StartChar: TelVaHalant
+@@ -54736,6 +54725,7 @@
+  584 150 584 150 640 192 c 0,79,80
+  702 238 702 238 702 319 c 0,65,66
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelVaFull TelHalant
+ EndChar
+ 
+ StartChar: TelShaHalant
+@@ -54925,6 +54915,7 @@
+  1097 170 1097 170 1206 231 c 0,74,75
+  1336 304 1336 304 1336 424 c 0,63,64
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelShaFull TelHalant
+ EndChar
+ 
+ StartChar: TelSsaHalant
+@@ -55126,6 +55117,7 @@
+  584 150 584 150 640 192 c 0,88,89
+  702 238 702 238 702 319 c 0,74,75
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelSsaFull TelHalant
+ EndChar
+ 
+ StartChar: TelSaHalant
+@@ -55318,6 +55310,7 @@
+  1293 1220 1293 1220 1447 995 c 0,70,71
+  1584 795 1584 795 1584 538 c 0,29,30
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelSaFull TelHalant
+ EndChar
+ 
+ StartChar: TelHaHalant
+@@ -55556,6 +55549,7 @@
+  584 150 584 150 640 192 c 0,110,111
+  702 238 702 238 702 319 c 0,97,98
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelHaFull TelHalant
+ EndChar
+ 
+ StartChar: TelKSsaHalant
+@@ -55802,6 +55796,7 @@
+  1371 -370 1371 -370 1442 -370 c 1,109,-1
+  1442 -500 l 1,67,68
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelKSsaFull TelHalant
+ EndChar
+ 
+ StartChar: TelShJaHalant
+@@ -56030,6 +56025,7 @@
+  649 746 649 746 701 789 c 0,119,120
+  758 835 758 835 758 912 c 0,107,108
+ EndSplineSet
++Ligature2: "'haln' Halant Forms in Telugu lookup 3 subtable" TelShJaFull TelHalant
+ EndChar
+ 
+ StartChar: TelTKRaHalant
