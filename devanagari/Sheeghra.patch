@@ -1,0 +1,46 @@
+--- RKRaghuHindi.sfd	2012-02-29 02:45:26.749023400 +0900
++++ SheeghraDevanagari.sfd	2012-02-29 16:21:22.403320300 +0900
+@@ -1,10 +1,10 @@
+ SplineFontDB: 3.0
+-FontName: RaghuHindiSans
+-FullName: RaghuHindi
+-FamilyName: RaghuHindi
++FontName: SheeghraDevanagari
++FullName: SheeghraDevanagari
++FamilyName: SheeghraDevanagari
+ Weight: Book
+ Copyright: RaghuHindi(c)  Centre for Development of Advanced Computing, Mumbai. Font Design: Prof. R.K. Joshi, assisted by Jui Mhatre, Supriya Kharkar and Kruti Dalvi. Script: Devanagari. Full font. Contains font + Unicode set requirements. 
+-Version: Original Version 1.00 (2005)
++Version: Mend Version 1.00a
+ ItalicAngle: 0
+ UnderlinePosition: -156
+ UnderlineWidth: 104
+@@ -14,7 +14,7 @@
+ LayerCount: 2
+ Layer: 0 1 "Back"  1
+ Layer: 1 1 "Fore"  0
+-XUID: [1021 600 933142589 16687238]
++XUID: [1021 494 2031268696 14399711]
+ FSType: 0
+ OS2Version: 1
+ OS2_WeightWidthSlopeOnly: 0
+@@ -86,8 +86,8 @@
+ Lookup: 6 0 0 "'psts' IiMatraThree"  {"IiMatraThree"  } ['psts' ('deva' <'dflt' > ) ]
+ Lookup: 6 0 0 "'psts' IiMatraSix"  {"IiMatraSix"  } ['psts' ('deva' <'dflt' > ) ]
+ Lookup: 1 0 0 "Single Substitution lookup 32"  {"Single Substitution lookup 32 subtable"  } []
+-Lookup: 4 0 0 "Ligature Substitution lookup 33"  {"Ligature Substitution lookup 33 subtable"  } []
+-Lookup: 4 0 0 "Ligature Substitution lookup 34"  {"Ligature Substitution lookup 34 subtable"  } []
++Lookup: 4 0 0 "Ligature Substitution lookup 33"  {"Ligature Substitution lookup 33 subtable"  } ['blwf' ('deva' <'dflt' > ) ]
++Lookup: 4 0 0 "Ligature Substitution lookup 34"  {"Ligature Substitution lookup 34 subtable"  } ['rphf' ('deva' <'dflt' > ) ]
+ Lookup: 2 0 0 "Multiple Substitution lookup 35"  {"Multiple Substitution lookup 35 subtable"  } []
+ Lookup: 2 0 0 "Multiple Substitution lookup 36"  {"Multiple Substitution lookup 36 subtable"  } []
+ Lookup: 4 0 0 "Ligature Substitution lookup 37"  {"Ligature Substitution lookup 37 subtable"  } []
+@@ -11286,7 +11286,7 @@
+  -179 -456 l 1,0,-1
+ EndSplineSet
+ Ligature2: "Ligature Substitution lookup 38 subtable" RaVattu Reph
+-Ligature2: "Ligature Substitution lookup 33 subtable" HalZWJ fullRa
++Ligature2: "Ligature Substitution lookup 33 subtable" fullRa Halant
+ Ligature2: "EatHalantZWJs" ZWJ RaVattu
+ EndChar
+ 
