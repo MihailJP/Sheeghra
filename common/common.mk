@@ -6,15 +6,10 @@ all: patch $(TARGET)
 $(TARGET): $(TARGET:.ttf=.sfd)
 	fontforge -lang=ff -c "Open(\"$<\");Generate(\"$@\")"
 
-fetch: $(SRCTTF) $(BASETTF) $(SRCDOC)
-$(SRCTTF):
-	wget http://www.cdacmumbai.in/projects/indix/RaghuFonts/$(SRCTTF)
-$(SRCDOC):
-	wget http://www.cdacmumbai.in/projects/indix/RaghuFonts/$(SRCDOC)
-$(BASETTF):
-	wget http://www.cdacmumbai.in/projects/indix/RaghuFonts/$(BASETTF)
+fetch:
+	@echo The target \`fetch\` is deprecated and does nothing.
 
-conv2sfd: fetch $(SRCTTF:.ttf=.sfd)
+conv2sfd: $(SRCTTF:.ttf=.sfd)
 $(SRCTTF:.ttf=.vtp): $(SRCTTF)
 	../tools/extractvtp.pl $< > $@
 $(SRCTTF:.ttf=.sfd): $(BASETTF) $(SRCTTF:.ttf=.vtp) $(SEDSCR)
@@ -36,4 +31,4 @@ clean:
 	-rm -rf $(SRCTTF:.ttf=.vtp) $(SRCTTF:.ttf=.sfd) $(TARGET) $(TARGET:.ttf=.sfd) *~
 
 distclean: clean
-	-rm -rf $(SRCTTF) $(BASETTF) $(SRCDOC)
+	@echo The target \`distclean\` is deprecated and does nothing more than \`clean\`.

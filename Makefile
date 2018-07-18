@@ -1,6 +1,6 @@
 .PHONY: all fetch conv2sfd patch preparedist clean distclean
 DIRS=devanagari bengali gurmukhi gujarati oriya tamil telugu kannada malayalam
-FETCHDOCS=COPYING.txt
+FETCHDOCS=
 README=README
 CHANGELOG=ChangeLog
 include common/vars.mk
@@ -9,13 +9,10 @@ DISTFILE=$(DISTDIR).tar.xz
 all: patch
 	for i in $(DIRS);do cd $$i; make $@; cd ..; done
 
-fetch: $(FETCHDOCS)
-	for i in $(DIRS);do cd $$i; make $@; cd ..; done
+fetch:
+	@echo The target \`fetch\` is deprecated and does nothing.
 
-$(FETCHDOCS):
-	wget http://www.cdacmumbai.in/projects/indix/RaghuFonts/$(FETCHDOCS)
-
-conv2sfd: fetch
+conv2sfd:
 	for i in $(DIRS);do cd $$i; make $@; cd ..; done
 
 patch: conv2sfd
@@ -41,5 +38,4 @@ clean:
 	for i in $(DIRS);do cd $$i; make $@; cd ..; done
 
 distclean: clean
-	-rm $(FETCHDOCS)
 	for i in $(DIRS);do cd $$i; make $@; cd ..; done
